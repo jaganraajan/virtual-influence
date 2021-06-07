@@ -45,41 +45,31 @@ export default () => {
     {
       imageSrc:
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
-      subtitle: "Paid",
-      title: "Loachella, NYC",
+      subtitle: "TM Jagadeesh R",
+      title: "Editor's Desk",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com"
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis praesentium perferendis qui quas magnam? Pariatur ratione quidem ipsa illo nihil, molestiae perspiciatis libero soluta consectetur hic consequuntur deserunt et, ab totam accusantium! Excepturi expedita quis culpa debitis illum nobis nam consequatur repellendus, pariatur laboriosam voluptatem quo sed a ex itaque error, recusandae nemo adipisci. Nostrum neque error quis eligendi doloribus velit beatae, asperiores repudiandae id illo vero deleniti facilis, ad distinctio obcaecati ipsum qui consectetur eaque sequi vitae sit. Deserunt nostrum, odio cumque fugiat praesentium totam enim nihil ea voluptatem, nisi impedit accusamus, molestiae exercitationem necessitatibus ex velit. Ratione, obcaecati suscipit quidem natus accusamus nihil repellat magni quae unde minus animi eveniet facilis nam ad corrupti eligendi est! Asperiores, sunt possimus error aperiam esse vero minus necessitatibus molestias facilis magni ad iusto et autem odit quibusdam blanditiis, labore fugit? Impedit ratione quos molestiae error, sit saepe praesentium ea nihil consectetur quam minima corrupti quia laborum soluta quaerat nam doloribus vitae expedita iure voluptates exercitationem consequatur rerum non. ",
+      url: ""
     },
 
     {
       imageSrc:
         "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      subtitle: "Free",
-      title: "Rock In Rio, Upstate",
+      subtitle: "TM Aashish",
+      title: "President's Desk",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ducimus in eveniet assumenda optio sunt cum minima magni, nam harum reiciendis amet recusandae magnam eaque accusamus veritatis culpa reprehenderit asperiores cupiditate blanditiis quaerat eum neque qui numquam? Fugit aliquid quidem, ipsum ad inventore aspernatur itaque a quo nobis quibusdam nesciunt accusantium, sed quae modi repellendus, possimus ducimus eos. Sit doloribus ipsa ad tempora dolores expedita voluptatibus. Est adipisci fugit optio libero cupiditate iusto aliquid porro rerum laudantium quaerat earum consequuntur explicabo dignissimos veniam, maiores alias perspiciatis vel, ad, eligendi ex vitae. Voluptate consequatur, in sunt quod eveniet laborum autem recusandae aspernatur laudantium! Ipsum provident voluptas pariatur hic aliquam, similique fuga tenetur nostrum possimus alias atque sequi deserunt. Optio eos saepe explicabo qui possimus voluptatem, perspiciatis odit dolore? Eligendi, aut. Eius inventore magni in nam cumque minus perspiciatis illo illum qui commodi eaque amet odit dolorum veritatis necessitatibus exercitationem, ipsam ut error corporis quia. Blanditiis delectus minima fugit. Voluptas ad, suscipit laudantium, aspernatur facilis illum ratione nulla quae molestiae, mollitia distinctio?",
       url: "https://timerse.com"
     },
-
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com"
-    }
   ];
 
   return (
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Events</HeadingTitle>
+          <Title>#ExtraMileEveryday</Title>
           <HeadingDescription>
-            Here are some of the most popular events in New York City curated by professionals.
+            At Daffodils Toastmasters Club, we push ourselves to the limit every single day to give you an experience unlike anything you have seen before.
           </HeadingDescription>
         </HeadingInfoContainer>
 
@@ -88,10 +78,11 @@ export default () => {
             <Card key={i} reversed={i % 2 === 1}>
               <Image imageSrc={card.imageSrc} />
               <Details>
-                <Subtitle>{card.subtitle}</Subtitle>
+                
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
-                <Link href={card.url}>See Event Details</Link>
+                {/* <Link href={card.url}>See Event Details</Link> */}
+                <Subtitle>{card.subtitle}</Subtitle>
               </Details>
             </Card>
           ))}

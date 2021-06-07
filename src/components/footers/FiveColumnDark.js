@@ -144,7 +144,7 @@ export default () => {
         <Divider/>
         <CopyrightAndCompanyInfoRow>
           <CopyrightNotice>&copy; Copyright 2021, Daffodils Toastmasters Club</CopyrightNotice>
-          <CompanyInfo>More than a club</CompanyInfo>
+          <CompanyInfo>#MoreThanAClub</CompanyInfo>
         </CopyrightAndCompanyInfoRow>
       </Content>
     </Container>

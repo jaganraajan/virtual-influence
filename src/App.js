@@ -37,7 +37,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 // import Features from "components/features/VerticalWithAlternateImageAndText.js";
 // import Features from "components/features/DashedBorderSixFeatures";
-// import MainFeature from "components/features/TwoColWithButton.js";
+import MainFeature from "components/features/TwoColWithButton.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 // import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
@@ -50,7 +50,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 // import SliderCard from "components/cards/ThreeColSlider.js";
 // import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
-// import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
+import Portfolio from "components/cards/ProfileThreeColGrid.js";
 // import TabGrid from "components/cards/TabCardGrid.js";
 
 // import Blog from "components/blogs/ThreeColSimpleWithImage.js";
@@ -113,6 +113,10 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import AgencyLandingPage from "demos/AgencyLandingPage.js";
+import About from "pages/AboutUs.js";
+import Articles from "pages/Articles.js";
+import Interview from "pages/Interview.js";
+
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -141,21 +145,24 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/about">
-          <AgencyLandingPage />
+          <About />
+        </Route>
+        <Route path="/articles">
+          <Articles />
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
         </Route>
-        <Route path="/thank-you">
-          <ThankYouPage />
+        <Route path="/interview">
+          <Interview />
         </Route>
         <Route path="/">
           <AnimationRevealPage>
             <Hero />
             <Features />
-            <Blog />
+            {/* <MainFeature /> */}
+            <Portfolio />
             <Testimonial />
-            <ContactUsForm />
             <Footer />
           </AnimationRevealPage>
         </Route>

@@ -41,14 +41,14 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "Meet These Fine Folks.",
-  subheading = "Our Team",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "The 37th Committee of Daffodils Toastmasters Club",
+  subheading = "The whole team",
+  description = "A bunch of excited and energetic souls took charge of Daffodils Toastmasters Club on 4th July 2020. The Installation Officer was our club member, TM Shwetha Mahesh currently serving as Area A4 Director.The Installation Ceremony was attended by dignitaries from the District, guests and fellow Daffodilians. For the first time ever, theInstallation Ceremony of our club was virtual!",
   cards = [
     {
       imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Founder",
-      name: "Adam Cuppy",
+      position: "President",
+      name: "TM Aashish",
       links: [
         {
           url: "https://twitter.com",
@@ -66,8 +66,8 @@ export default ({
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Sr. Designer",
-      name: "Charlotte Hale",
+      position: "Vice-president education",
+      name: "TM Jeevan",
       links: [
         {
           url: "https://twitter.com",
@@ -85,8 +85,8 @@ export default ({
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Jr. Designer",
-      name: "Silvester Wize",
+      position: "Vice-president membership",
+      name: "TM Keshav",
       links: [
         {
           url: "https://twitter.com",
@@ -104,8 +104,8 @@ export default ({
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Lead Developer",
-      name: "Himali Turn",
+      position: "Vice-president Public Relations",
+      name: "TM Jagadeesh R",
       links: [
         {
           url: "https://twitter.com",
@@ -123,8 +123,8 @@ export default ({
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
-      position: "Sr. Developer",
-      name: "Troye Sivan",
+      position: "Secretary",
+      name: "TM Sanidhya",
       links: [
         {
           url: "https://twitter.com",
@@ -142,8 +142,46 @@ export default ({
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
-      position: "Quality Assurance",
-      name: "Holo Wo",
+      position: "Treasurer",
+      name: "TM Sandhya",
+      links: [
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sargeant-At-Arms",
+      name: "TM Suryakant",
+      links: [
+        {
+          url: "https://twitter.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://linkedin.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Immediate Past President",
+      name: "TM Umanath",
       links: [
         {
           url: "https://twitter.com",
@@ -176,13 +214,13 @@ export default ({
               <CardContent>
                 <span className="position">{card.position}</span>
                 <span className="name">{card.name}</span>
-                <CardLinks>
+                {/* <CardLinks>
                   {card.links.map((link, linkIndex) => (
                     <a key={linkIndex} className="link" href={link.url}>
                       <link.icon className="icon" />
                     </a>
                   ))}
-                </CardLinks>
+                </CardLinks> */}
               </CardContent>
             </Card>
           ))}
