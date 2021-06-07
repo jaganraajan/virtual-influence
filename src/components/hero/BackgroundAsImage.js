@@ -17,8 +17,8 @@ const StyledHeader = styled(Header)`
 `;
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
-`;
+  background: url("https://images.unsplash.com/photo-1471958680802-1345a694ba6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2032&q=80") no-repeat center center;
+  `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 
@@ -58,22 +58,25 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
+      <NavLink href="/components/landingPages/AgencyLandingPage">
         About
       </NavLink>
       <NavLink href="#">
-        Blog
+        Articles
       </NavLink>
       <NavLink href="#">
-        Locations
+        Artwork
       </NavLink>
       <NavLink href="#">
-        Pricing
+        Milestones
+      </NavLink>
+      <NavLink href="#">
+        Gallery
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
       <PrimaryLink href="/#">
-        Hire Us
+        
       </PrimaryLink>
     </NavLinks>
   ];
@@ -85,19 +88,22 @@ export default () => {
         <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
+            <Notification>37th Committee of Daffodils Toastmasters Club</Notification>
             <Heading>
-              <span>Hire the best</span>
+              <span>Sparking Growth,</span>
               <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
+              <span>Shaping Lives</span>
+              <br />
+              <br />
+              <SlantedBackground>#ExtraMileEveryday</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            <PrimaryAction>Contact Us</PrimaryAction>
           </LeftColumn>
           <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+            {/* <StyledResponsiveVideoEmbed
+              url="https://youtu.be/IN4wluwc0-M"
               background="transparent"
-            />
+            /> */}
           </RightColumn>
         </TwoColumn>
       </HeroContainer>

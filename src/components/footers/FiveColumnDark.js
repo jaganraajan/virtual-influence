@@ -3,10 +3,12 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "images/logo-light.svg";
+import LogoImage from "images/logo_new.svg";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
+import { ReactComponent as GitHubIcon } from "images/github-icon.svg";
+import { ReactComponent as InstagramIcon } from "images/instagram-icon.svg";
 
 const Container = tw.div`relative bg-gray-900 text-gray-100 -mx-8 -mb-8 px-8`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`
@@ -48,22 +50,25 @@ export default () => {
           <CompanyColumn>
             <LogoContainer>
               <LogoImg src={LogoImage} />
-              <LogoText>Treact Inc.</LogoText>
+              <LogoText>Virtual Influence</LogoText>
             </LogoContainer>
             <CompanyAddress>
-              123 Road, New Startup Building
-              Carter Road, San Francisco
-              California 40234
+              Daffodils Toastmasters Club
+              <br/>
+              <span tw="text-gray-500">#ExtraMileEveryday</span>
             </CompanyAddress>
             <SocialLinksContainer>
               <SocialLink href="https://facebook.com">
                 <FacebookIcon />
               </SocialLink>
               <SocialLink href="https://twitter.com">
-                <TwitterIcon />
+                <InstagramIcon />
               </SocialLink>
               <SocialLink href="https://youtube.com">
                 <YoutubeIcon />
+              </SocialLink>
+              <SocialLink href="https://youtube.com">
+                <GitHubIcon />
               </SocialLink>
             </SocialLinksContainer>
           </CompanyColumn>
@@ -122,11 +127,11 @@ export default () => {
             <ColumnHeading>Contact</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                +1 (234) (567)-8901
+                +91 971238901
               </LinkListItem>
-              <LinkListItem>
-                <Link href="mailto:support@servana.com">support@servana.com</Link>
-              </LinkListItem>
+              {/* <LinkListItem>
+                <Link href="mailto:daffodilstoastmastersclub@gmail.com">daffodilstoastmastersclub@gmail.com</Link>
+              </LinkListItem> */}
               <LinkListItem>
                 <Link href="#">Sales</Link>
               </LinkListItem>
@@ -138,8 +143,8 @@ export default () => {
         </FiveColumns>
         <Divider/>
         <CopyrightAndCompanyInfoRow>
-          <CopyrightNotice>&copy; Copyright 2020, Treact Inc.</CopyrightNotice>
-          <CompanyInfo>An Internet Company.</CompanyInfo>
+          <CopyrightNotice>&copy; Copyright 2021, Daffodils Toastmasters Club</CopyrightNotice>
+          <CompanyInfo>More than a club</CompanyInfo>
         </CopyrightAndCompanyInfoRow>
       </Content>
     </Container>
