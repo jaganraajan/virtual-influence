@@ -12,6 +12,9 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
 
 import "slick-carousel/slick/slick.css";
+import Anup from "images/anup.jpg";
+import Harsha from "images/harsha.jpg";
+import Sagnik from "images/sagnik.jpg";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -76,28 +79,22 @@ export default () => {
    */
   const testimonials = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "TM Madhusudhan",
+      imageSrc: Harsha,
+      quote: "Life is all about facing the bull by it's horns and with the confidence you gain at Daffodils Toastmasters Club, Bangalore you have won even before you have started..",
+      customerName: "TM Harsha",
       customerTitle: "Member since 2016"
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
+      imageSrc: Anup,
+      quote:"I would say with so much pride that I am part of such a reputed club with so much legacy behind and if I can do it anybody can do it.",
+      customerName: "TM Anup",
+      customerTitle: "Member since 2020"
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Steven Marcetti",
-      customerTitle: "Event Manager, Brite"
+      imageSrc: Sagnik,
+      quote:"If you see what you wish to find in communication and leadership opportunities, this is the place.",
+      customerName: "Sagnik Biswas, DTM",
+      customerTitle: "Program Quality Director of District 92"
     }
   ];
   return (

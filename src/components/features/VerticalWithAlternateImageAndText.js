@@ -3,6 +3,9 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
+import Jagan from "images/jagan.jpg";
+import Aashish from "images/aashish.jpg";
+
 
 const Container = tw.div`relative`;
 
@@ -19,7 +22,7 @@ const Card = styled.div(props => [
 ]);
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
+  tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-top mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
@@ -44,7 +47,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
+        Jagan,
       subtitle: "TM Jagadeesh R",
       title: "Editor's Desk",
       description:
@@ -54,7 +57,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        Aashish,
       subtitle: "TM Aashish",
       title: "President's Desk",
       description:
@@ -69,11 +72,11 @@ export default () => {
         <HeadingInfoContainer>
           <Title>#ExtraMileEveryday</Title>
           <HeadingDescription>
-            At Daffodils Toastmasters Club, we push ourselves to the limit every single day to give you an experience unlike anything you have seen before.
+            At Daffodils Toastmasters Club, the 37th committee goes the extra mile every single day to give you an experience unlike anything you have seen before.
           </HeadingDescription>
         </HeadingInfoContainer>
 
-        <Content>
+        {/* <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
               <Image imageSrc={card.imageSrc} />
@@ -81,12 +84,11 @@ export default () => {
                 
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
-                {/* <Link href={card.url}>See Event Details</Link> */}
                 <Subtitle>{card.subtitle}</Subtitle>
               </Details>
             </Card>
           ))}
-        </Content>
+        </Content> */}
       </SingleColumn>
       <SvgDotPattern1 />
       <SvgDotPattern2 />

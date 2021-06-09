@@ -15,6 +15,7 @@ import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullF
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Hero from "components/hero/BackgroundAsImage.js";
+import Footer2 from "components/footers/MiniCenteredFooter.js";
 
 
 import SupportIconImage from "images/support-icon.svg";
@@ -25,7 +26,9 @@ import ReliableIconImage from "images/reliable-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
 
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
-
+import Toastmasters from "images/toastmaster1.png";
+import Toastmasters2 from "images/toastmaster2.png";
+import Daffodils from "images/dtm.jpg";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
@@ -38,13 +41,11 @@ export default () => {
         buttonRounded={false}
         description="Toastmasters International is a nonprofit educational
         organization that teaches public speaking and leadership
-        skills through a worldwide network of clubs.
-        Headquartered in Englewood, Colo. Since 1924, Toastmasters International has
+        skills through a worldwide network of clubs. Since 1924, Toastmasters International has
         helped people from diverse backgrounds become more
         confident speakers, communicators, and leaders."
         primaryButtonText="See Portfolio"
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
-      />
+        imageSrc = {Toastmasters}/>
       <MainFeature2 
         subheading={"Toastmasters International Mission"}
         heading="We empower individuals to become more effective
@@ -52,7 +53,7 @@ export default () => {
         buttonRounded={false}
         primaryButtonText="Contact Us"
         description=""
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        imageSrc={Toastmasters2}
         textOnLeft={false}
       />
       <MainFeature1
@@ -68,7 +69,7 @@ export default () => {
         making it the ideal place for learning coupled with fun."
         buttonRounded={false}
         primaryButtonText="Contact Us"
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        imageSrc={Daffodils}
         textOnLeft={false}
       />
       <Features
@@ -107,8 +108,8 @@ export default () => {
           </>
         }
     />
-      <ContactUsForm />
-      <Footer />
+      {/* <ContactUsForm /> */}
+      <Footer2 />
     </AnimationRevealPage>
   );
 };

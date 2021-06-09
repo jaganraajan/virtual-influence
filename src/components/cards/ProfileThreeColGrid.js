@@ -8,6 +8,15 @@ import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
+import Jagan from "images/jagan.jpg";
+import Aashish from "images/aashish.jpg";
+import Keshav from "images/keshav.jpg";
+import Sandhya from "images/sandhya.jpg";
+import Sanidhya from "images/sanidhya.jpg";
+import Jeevan from "images/jeevan.jpeg";
+import Surya from "images/surya.jpeg";
+import Umanath from "images/umanath.png";
+// import Surya from "images/surya.jpg";
 
 const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
@@ -17,7 +26,7 @@ const Description = tw(SectionDescription)`mx-auto text-center`
 const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 const CardImage = styled.div`
-  ${props => css`background-image: url("${props.imageSrc}");`}
+  ${props => css`background: url("${props.imageSrc}") no-repeat;`}
   ${tw`w-64 h-64 bg-contain bg-center rounded`}
 `
 const CardContent = styled.div`
@@ -43,10 +52,10 @@ const CardLinks = styled.div`
 export default ({
   heading = "The 37th Committee of Daffodils Toastmasters Club",
   subheading = "The whole team",
-  description = "A bunch of excited and energetic souls took charge of Daffodils Toastmasters Club on 4th July 2020. The Installation Officer was our club member, TM Shwetha Mahesh currently serving as Area A4 Director.The Installation Ceremony was attended by dignitaries from the District, guests and fellow Daffodilians. For the first time ever, theInstallation Ceremony of our club was virtual!",
+  description = "A bunch of excited and energetic souls took charge of Daffodils Toastmasters Club on 2nd January 2021. The Installation Officer was our club member, Kumaran M. Pethi. For the first time ever, the Chief Guest for our Installation Ceremony was the International President of Toastmasters, Richard E. Peck, DTM. The ceremony was also attended by dignitaries from the District, guests and fellow Daffodilians." ,
   cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: Aashish,
       position: "President",
       name: "TM Aashish",
       links: [
@@ -65,7 +74,7 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: Jeevan,
       position: "Vice-president education",
       name: "TM Jeevan",
       links: [
@@ -84,7 +93,7 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: Keshav,
       position: "Vice-president membership",
       name: "TM Keshav",
       links: [
@@ -103,9 +112,9 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: Jagan,
       position: "Vice-president Public Relations",
-      name: "TM Jagadeesh R",
+      name: "TM Jagan R",
       links: [
         {
           url: "https://twitter.com",
@@ -122,7 +131,7 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: Sanidhya,
       position: "Secretary",
       name: "TM Sanidhya",
       links: [
@@ -141,7 +150,7 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: Sandhya,
       position: "Treasurer",
       name: "TM Sandhya",
       links: [
@@ -160,7 +169,7 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: Surya,
       position: "Sargeant-At-Arms",
       name: "TM Suryakant",
       links: [
@@ -179,7 +188,7 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: Umanath,
       position: "Immediate Past President",
       name: "TM Umanath",
       links: [

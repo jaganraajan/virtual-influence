@@ -64,12 +64,7 @@ export default ({
     {
       question: "What are the benefits of joining toastmastesrs?",
       answer:
-        "Your public speaking skills are greatly improved."
-    },
-    {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Toastmasters can help you lose the fear of public speaking and learn skills that will help you be more successful in your chosen endeavor. You’ll listen better. You’ll more easily lead teams and conduct meetings. You’ll comfortably give and receive constructive evaluations. You already have some or all of these skills. In Toastmasters, you will enhance them."
     }
   ];
 

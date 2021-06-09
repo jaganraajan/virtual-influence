@@ -107,6 +107,7 @@ import Blog from "components/blogs/ThreeColSimpleWithImage.js";
 import Testimonial from "components/testimonials/TwoColumnWithImage.js";
 import ContactUsForm from "components/forms/SimpleContactUs.js";
 import Footer from "components/footers/FiveColumnDark.js";
+import Footer2 from "components/footers/MiniCenteredFooter.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
@@ -123,7 +124,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
-
 
   return (
     // <Router>
@@ -163,7 +163,7 @@ export default function App() {
             {/* <MainFeature /> */}
             <Portfolio />
             <Testimonial />
-            <Footer />
+            <Footer2 />
           </AnimationRevealPage>
         </Route>
       </Switch>

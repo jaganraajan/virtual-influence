@@ -35,13 +35,24 @@ const Heading = styled.h1`
 
 const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
+const SlantedBackground = styled.span`
+  ${tw`relative text-primary-500 px-4 -mx-4 py-2 mb-5`}
+  &::before {
+    content: "";
+    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
+  }
+`;
+
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
+      <NavLink href="/">
+        Home
+      </NavLink>
       <NavLink href="/about">
         About
       </NavLink>
-      <NavLink href="/articles">
+      {/* <NavLink href="/articles">
         Articles
       </NavLink>
       <NavLink href="#">
@@ -49,16 +60,16 @@ export default () => {
       </NavLink>
       <NavLink href="#">
         Milestones
-      </NavLink>
+      </NavLink> */}
       <NavLink href="/interview">
-        Gallery
+        Interview
       </NavLink>
     </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
+    // <NavLinks key={2}>
+    //   <PrimaryLink href="/#">
         
-      </PrimaryLink>
-    </NavLinks>
+    //   </PrimaryLink>
+    // </NavLinks>
   ];
 
   return (
@@ -68,11 +79,11 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-              Virtual Influence
+              <SlantedBackground>Virtual Influence</SlantedBackground>
               <br />
               Building Relationships using Tech
           </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
+          {/* <PrimaryAction>Search Events Near Me</PrimaryAction> */}
         </Content>
       </HeroContainer>
     </Container>
