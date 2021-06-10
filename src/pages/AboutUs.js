@@ -16,7 +16,7 @@ import FAQ from "components/faqs/SimpleWithSideImage.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Hero from "components/hero/BackgroundAsImage.js";
 import Footer2 from "components/footers/MiniCenteredFooter.js";
-
+import MainFeature3 from "components/features/ThreeColCenteredStatsPrimaryBackground";
 
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
@@ -46,16 +46,7 @@ export default () => {
         confident speakers, communicators, and leaders."
         primaryButtonText="See Portfolio"
         imageSrc = {Toastmasters}/>
-      <MainFeature2 
-        subheading={"Toastmasters International Mission"}
-        heading="We empower individuals to become more effective
-        communicators and leaders."
-        buttonRounded={false}
-        primaryButtonText="Contact Us"
-        description=""
-        imageSrc={Toastmasters2}
-        textOnLeft={false}
-      />
+      <MainFeature3/>
       <MainFeature1
         subheading={<Subheading>Club Number: 1766 | Area C4 | District 92</Subheading>}
         heading="DAFFODILS

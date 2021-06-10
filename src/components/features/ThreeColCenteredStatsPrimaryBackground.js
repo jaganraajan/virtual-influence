@@ -18,20 +18,20 @@ const StatValue = tw.div`text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-black
 
 export default ({
   subheading = "",
-  heading = "Over 9000 Projects Completed",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Toastmasters International Mission",
+  description = "We empower individuals to become more effective communicators and leaders.",
   stats = [
     {
-      key: "Clients",
-      value: "2500+",
+      key: "Members",
+      value: "364,000+",
     },
     {
-      key: "Revenue",
-      value: "$100M+",
+      key: "Clubs",
+      value: "16,200+",
     },
     {
-      key: "Employees",
-      value: "150+",
+      key: "Countries",
+      value: "145+",
     },
   ]
 }) => {

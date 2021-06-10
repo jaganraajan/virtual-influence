@@ -134,7 +134,7 @@ export default ({
           </FAQSContainer>
         </Column>
         <Description> Linda was kind enough to take the time off her schedule for this interview. We thank her with whole of our heart and wish her
-bond with Daffodils Toastmasters Club gets stronger in the future. </Description>
+bond with Daffodils Toastmasters Club grows stronger in the future. </Description>
       {/* <DecoratorBlob1/> */}
       {/* <DecoratorBlob2 /> */}
       
