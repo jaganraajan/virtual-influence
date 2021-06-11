@@ -64,7 +64,6 @@ export default ({
   ];
   return (
     <AnimationRevealPage>
-    <Header links={navLinks}/>
     <Container>
       <ContentWithVerticalPadding>
         <Row>

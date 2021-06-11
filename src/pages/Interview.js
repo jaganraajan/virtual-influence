@@ -13,6 +13,8 @@ import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial";
 import Footer from "components/footers/FiveColumnDark.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Footer2 from "components/footers/MiniCenteredFooter.js";
+import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";
+
 
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
@@ -41,8 +43,24 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 `;
 
 
+const StyledHeader = styled(Header)`
+  ${tw`p-5 pt-8 max-w-none w-full`}
+  ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
+    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300 `}
+  }
+  ${NavToggle}.closed {
+    ${tw`text-gray-100 hover:text-primary-500`}
+  }
+`;
+
+const Container2 = styled.div`
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+  background-image: linear-gradient(#414141, #000000);`;
+
+
 
 export default ({
+  
   subheading = "Interview",
   heading1 = "Hello Linda,",
   heading2 = "Blessings to All. Stand and speak!!!",
@@ -78,6 +96,33 @@ export default ({
     }
   ]
 }) => {
+  const navLinks = [
+    <NavLinks key={1}>
+      <NavLink href="/">
+        Home
+      </NavLink>
+      <NavLink href="/about">
+        About
+      </NavLink>
+      {/* <NavLink href="/articles">
+        Articles
+      </NavLink>
+      <NavLink href="#">
+        Artwork
+      </NavLink>
+      <NavLink href="#">
+        Milestones
+      </NavLink> */}
+      <NavLink href="/interview">
+        Interview
+      </NavLink>
+    </NavLinks>,
+    // <NavLinks key={2}>
+    //   <PrimaryLink href="/#">
+        
+    //   </PrimaryLink>
+    // </NavLinks>
+  ];
 //   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
 //   const toggleQuestion = questionIndex => {
@@ -89,7 +134,9 @@ export default ({
     <>
     
     <AnimationRevealPage>
+      <Container2><StyledHeader links={navLinks} /></Container2>
       <Hero />
+        
         <Column>
           <HeaderContent>
             {subheading && <Subheading>{subheading}</Subheading>}

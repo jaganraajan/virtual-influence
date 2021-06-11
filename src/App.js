@@ -117,9 +117,11 @@ import AgencyLandingPage from "demos/AgencyLandingPage.js";
 import About from "pages/AboutUs.js";
 import Articles from "pages/Articles.js";
 import Interview from "pages/Interview.js";
+import SingleArticle from "pages/SingleArticle.js";
 
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Gallery from "pages/Gallery";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -155,6 +157,12 @@ export default function App() {
         </Route>
         <Route path="/interview">
           <Interview />
+        </Route>
+        <Route path="/singleArticle">
+          <SingleArticle />
+        </Route>
+        <Route path="/gallery">
+          <Gallery />
         </Route>
         <Route path="/">
           <AnimationRevealPage>

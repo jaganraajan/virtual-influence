@@ -27,9 +27,9 @@ const AuthorName = tw.h6`font-semibold text-lg`;
 const AuthorProfile = tw.p`text-secondary-100 text-sm`;
 
 const StyledHeader = styled(Header)`
-  ${tw`pt-8 max-w-none w-full`}
+  ${tw`p-5 pt-8 max-w-none w-full`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
-    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
+    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300 `}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
@@ -38,6 +38,10 @@ const StyledHeader = styled(Header)`
 
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
 const Container2 = styled.div`
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+  background-image: linear-gradient(#414141, #000000);`;
+
+const Container3 = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-4/6 min-h-144`}
   background-image: url("https://images.unsplash.com/photo-1585974738771-84483dd9f89f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
 `;
@@ -208,18 +212,9 @@ export default () => {
 
   return (
     <AnimationRevealPage>
-      <Container2>
-        <OpacityOverlay />
-        <HeroContainer>
-          <StyledHeader links={navLinks} />
-          <Content>
-            <Heading2>
-                Connect beyond Disconnections
-            </Heading2>
-            {/* <PrimaryAction>Search Events Near Me</PrimaryAction> */}
-          </Content>
-        </HeroContainer>
-      </Container2>
+        <Container2><StyledHeader links={navLinks} /></Container2>
+        
+
       <Container>
       <Text>
             <p>Last updated: April 21, 2020</p>
