@@ -31,10 +31,10 @@ import Toastmasters2 from "images/toastmaster2.png";
 import Daffodils from "images/dtm.jpg";
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
-export default () => {
+export default (navLinks) => {
   return (
     <AnimationRevealPage>
-      <Hero />
+      <Hero navLinks={navLinks}/>
       <MainFeature1
         subheading={"TOASTMASTERS INTERNATIONAL"}
         heading="WHERE LEADERS ARE MADE"

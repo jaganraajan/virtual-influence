@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import { useParams } from 'react-router-dom';
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -38,13 +39,13 @@ const StyledHeader = styled(Header)`
 
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
 const Container2 = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-4/6 min-h-144`}
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-4/6 min-h-128`}
   background-image: url("https://images.unsplash.com/photo-1585974738771-84483dd9f89f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-25`;
 
-const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-144 flex-auto flex-col `;
+const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-128 flex-auto flex-col `;
 const Content = tw.div`absolute left-0 bottom-0 px-4  flex-1 flex-col justify-start items-start`;
 // const Content = tw.div`px-4 float-bottom`;
 
@@ -58,7 +59,7 @@ const Heading2 = styled.h1`
 
 
 const Text = styled.div`
-  ${tw`text-lg  text-gray-800`}
+  ${tw`text-lg mx-auto max-w-4xl mb-10 text-black whitespace-pre-wrap`}
   p {
     ${tw`ml-4 lg:w-1/2 justify-center leading-loose`}
   }
@@ -103,6 +104,9 @@ const RecentPostsContainer = styled.div`
 const PostTextContainer = tw.div``
 
 export default () => {
+  const temp = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facilis deserunt aut deleniti est quas enim eius magni! Aut explicabo quia odit sed ipsa facilis molestias illum. Laudantium error omnis hic, quia minima deserunt? Nihil culpa debitis corrupti magnam alias! \n Deleniti vel veniam id autem harum itaque ipsam adipisci ex eaque provident? Ea fugit alias fuga modi nostrum magni accusantium reiciendis. Corrupti earum debitis commodi ex fugit itaque, minus rerum minima, explicabo totam excepturi vero, repellat sapiente dicta dolor doloremque aut nulla! Nam similique dignissimos eligendi earum minima voluptate magnam unde quod at ab illo, fugiat id. Autem error blanditiis magnam provident, animi ea doloribus unde saepe consequatur dolorum rem vel dicta at modi eos quam, in obcaecati amet. Autem iste quam velit libero \n\n reprehenderit aspernatur enim quod voluptatum illum! Sapiente itaque saepe labore eos aliquid. Aliquid vero facere facilis repellendus inventore dolores aperiam quaerat magni omnis reiciendis! Provident distinctio in totam dolore officiis adipisci quaerat recusandae. Tenetur maxime et nemo ex magni recusandae hic eaque iste quos odit doloremque officia quasi odio reprehenderit, ad deleniti debitis quaerat. Blanditiis perferendis officia illo! Voluptas quae, provident tempora non aperiam ad rem, ullam tempore, unde neque labore! Pariatur commodi vero quod, assumenda quisquam eius dolore adipisci fugiat nisi eveniet expedita cumque quam corrupti dolorem delectus eaque qui consequatur, perspiciatis molestiae ratione sed reiciendis ab! Porro, qui corporis. Assumenda reiciendis amet, pariatur voluptatem ducimus labore velit. Deleniti quo necessitatibus iure, sit nisi unde debitis dolorum nihil cupiditate obcaecati, error ipsum voluptatibus, impedit veritatis recusandae amet. Explicabo error laudantium beatae vitae quos ullam, iste architecto quibusdam odio, fuga aperiam corrupti veritatis odit? Dolore exercitationem expedita veritatis, unde temporibus atque praesentium iure. Exercitationem eveniet, sequi aliquam aut similique commodi mollitia, maxime voluptatum voluptas sed, quaerat labore unde deserunt itaque provident? Dicta sapiente perspiciatis et voluptatum.";
+  const { number } = useParams()
+
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="/">
@@ -214,40 +218,21 @@ export default () => {
           <StyledHeader links={navLinks} />
           <Content>
             <Heading2>
-                Connect beyond Disconnections
+                {number}
             </Heading2>
             {/* <PrimaryAction>Search Events Near Me</PrimaryAction> */}
           </Content>
         </HeroContainer>
       </Container2>
       <Container>
-      <Text>
-            <p>Last updated: April 21, 2020</p>
-
-            <p>
-              This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-              information when You use the Service and tells You about Your privacy rights and how the law protects You.
-            </p>
-
-            <p>
-              We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
-              collection and use of information in accordance with this Privacy Policy.
-            </p>
-
-            <h1>Interpretation and Definitions</h1>
-            <h2>Interpretation</h2>
-            <p>
-              The words of which the initial letter is capitalized have meanings defined under the following conditions.
-            </p>
-            <p>
-              The following definitions shall have the same meaning regardless of whether they appear in singular or in
-              plural.
-            </p>
-      </Text>
+      
       <ContentWithPaddingXl>
+      <Text>
+            {temp}
+      </Text>
         <Row>
           <PopularPostsContainer>
-            <Heading>Popular Posts</Heading>
+            <Heading>Recommended Posts</Heading>
             <PostsContainer>
               {popularPosts.map((post, index) => (
                 <Post key={index} href={post.url} className="group" initial="rest" whileHover="hover" animate="rest">
@@ -269,8 +254,8 @@ export default () => {
               ))}
             </PostsContainer>
           </PopularPostsContainer>
-          <RecentPostsContainer>
-            <Heading>Recent Posts</Heading>
+          <RecentPostsContainer> 
+            <Heading>Other Posts</Heading>
             <PostsContainer>
               {recentPosts.map((post, index) => (
               <Post key={index} href={post.url} className="group">

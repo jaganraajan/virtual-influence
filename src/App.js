@@ -118,14 +118,39 @@ import About from "pages/AboutUs.js";
 import Articles from "pages/Articles.js";
 import Interview from "pages/Interview.js";
 import SingleArticle from "pages/SingleArticle.js";
-
+import LeadershipArticle from "components/articles/LeadershipArticle.js";
+import MemberArticle from "components/articles/MemberArticle.js";
+import MemberPoems from "components/articles/MemberPoems.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Gallery from "pages/Gallery";
+import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
+  const navLinks = [
+    {
+      url: "/",
+      title: "Home"
+    },
+    {
+      url: "/about",
+      title: "About"
+    },
+    {
+      url: "/articles",
+      title: "Articles"
+    },
+    {
+      url: "/gallery",
+      title: "Gallery"
+    },
+    {
+      url: "/interview",
+      title: "Interview"
+    }
+  ];
 
   return (
     // <Router>
@@ -147,26 +172,36 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/about">
-          <About />
+          <About navLinks={navLinks}/>
+        </Route>
+        <Route path="/articles/leadership/:number">
+          <LeadershipArticle navLinks={navLinks}/>
+        </Route>
+        <Route path="/articles/member/:number">
+          <MemberArticle navLinks={navLinks}/>
+        </Route>
+        <Route path="/articles/poem/:number">
+          <MemberPoems navLinks={navLinks}/>
         </Route>
         <Route path="/articles">
-          <Articles />
+          <Articles navLinks={navLinks}/>
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
         </Route>
         <Route path="/interview">
-          <Interview />
+          <Interview navLinks={navLinks}/>
         </Route>
-        <Route path="/singleArticle">
+        <Route path="/singleArticle/:number">
           <SingleArticle />
         </Route>
+        
         <Route path="/gallery">
-          <Gallery />
+          <Gallery navLinks={navLinks}/>
         </Route>
         <Route path="/">
           <AnimationRevealPage>
-            <Hero />
+            <Hero navLinks={navLinks}/>
             <Features />
             {/* <MainFeature /> */}
             <Portfolio />

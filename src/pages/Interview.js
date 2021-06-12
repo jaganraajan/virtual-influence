@@ -33,7 +33,7 @@ const QuestionToggleIcon = motion(styled.span`
     ${tw`w-6 h-6`}
   }
 `);
-const Answer = (tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
+const Answer = (tw.dd`whitespace-pre-wrap pointer-events-none text-sm sm:text-base leading-relaxed`);
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-teal-400`}
@@ -60,7 +60,7 @@ const Container2 = styled.div`
 
 
 export default ({
-  
+  navLinks,
   subheading = "Interview",
   heading1 = "Hello Linda,",
   heading2 = "Blessings to All. Stand and speak!!!",
@@ -69,7 +69,7 @@ export default ({
     {
       question: "Tell us about your journey from Linda-Marie Miller to Toastmaster Linda-Marie Miller, First Runner-up at World Championship of Public Speaking, 2020?",
       answer:
-        "I joined Toastmasters in the fall of 2019 and was asked to step in right away as the VP of Education.  Because I was an officer, I attended a TLI in December of 2019.  At that TLI, I attended a session delivered by a prior Finalist and it awakened in me a desire to think about competing in the contest because it sounded like a lot of fun.  I entered the contest that began in my home club in early 2020 and just kept winning at every level.  I never expected to find myself in the Semifinals and I was thrilled to have made it that far, knowing that there was no way a new Toastmaster that nobody had ever heard of would make it to the final stage. When they announced my name, I was shocked. I was even more shocked that I was the 1st Runner-Up in The World Championship of Public Speaking. Since then, I have spoken to thousands of people all over the world and I am honored that I have a platform to make a difference for others."
+        "I joined Toastmasters in the fall of 2019 and was asked to step in right away as the VP of Education.  Because I was an officer, I attended a TLI in December of 2019.  At that TLI, I attended a session delivered by a prior Finalist and it awakened in me a desire to think about competing in the contest because it sounded like a lot of fun.  I entered the contest that began in my home club in early 2020 and just kept winning at every level.  I never expected to find myself in the Semifinals and I was thrilled to have made it that far, knowing that there was no way a new Toastmaster that nobody had ever heard of would make it to the final stage. \n\n When they announced my name, I was shocked. I was even more shocked that I was the 1st Runner-Up in The World Championship of Public Speaking. Since then, I have spoken to thousands of people all over the world and I am honored that I have a platform to make a difference for others."
     },
     {
       question: "What keeps you motivated to become a better Toastmaster?",
@@ -88,41 +88,24 @@ export default ({
     },
     {
       question: "Leadership or Communication, which one is more important according to you and why?",
-      answer: "They are both spokes in the same wheel called IMPACT.  You can’t communicate effectively without coming from the distinctions of leadership and you can’t lead effectively unless you can communicate authentically and powerfully.  These two pillars are so important.  They are the basis for everything I teach in Empowered Living and Speaking.  If anyone is interested in being added to the email list for upcoming workshop sessions on these topics, let me know at miller.lindamarie@gmail.com."
+      answer: "They are both spokes in the same wheel called IMPACT.  You can’t communicate effectively without coming from the distinctions of leadership and you can’t lead effectively unless you can communicate authentically and powerfully.  These two pillars are so important.  They are the basis for everything I teach in Empowered Living and Speaking.  \n\n If anyone is interested in being added to the email list for upcoming workshop sessions on these topics, let me know at miller.lindamarie@gmail.com."
     },
     {
       question: "Could you share a few words on the impact you are trying to achieve in your latest project - One Shared Humanity?",
-      answer: "I was shocked that the speech I delivered at finals titled “Pretending Not to Know” impacted as many people as it did.  I received thousands of emails from people wanting to know if there was a way for them to connect with other people that were also affected.  The speech seemed to open the hearts and minds of many white people and also gave a bit of hope to non-white people.  As a result, One Shared Humanity was formed.  I have three other partners and we work to create a world where everyone belongs and can be fully-expressed and celebrated. Anyone that want to join the private facebook page called One Shared Humanity can do so by looking us up on facebook and answering three questions. Blessings to All. Stand and speak!!!"
+      answer: "I was shocked that the speech I delivered at finals titled “Pretending Not to Know” impacted as many people as it did.  I received thousands of emails from people wanting to know if there was a way for them to connect with other people that were also affected.  The speech seemed to open the hearts and minds of many white people and also gave a bit of hope to non-white people.  As a result, One Shared Humanity was formed.  I have three other partners and we work to create a world where everyone belongs and can be fully-expressed and celebrated. Anyone that want to join the private facebook page called One Shared Humanity can do so by looking us up on facebook and answering three questions. \n\n Blessings to All. Stand and speak!!!"
     }
   ]
 }) => {
-  const navLinks = [
+  console.log(navLinks);
+  const navLinks3 = [
     <NavLinks key={1}>
-      <NavLink href="/">
-        Home
-      </NavLink>
-      <NavLink href="/about">
-        About
-      </NavLink>
-      {/* <NavLink href="/articles">
-        Articles
-      </NavLink>
-      <NavLink href="#">
-        Artwork
-      </NavLink>
-      <NavLink href="#">
-        Milestones
-      </NavLink> */}
-      <NavLink href="/interview">
-        Interview
-      </NavLink>
-    </NavLinks>,
-    // <NavLinks key={2}>
-    //   <PrimaryLink href="/#">
-        
-    //   </PrimaryLink>
-    // </NavLinks>
-  ];
+      {navLinks.map((navLink) => (
+        <NavLink href={navLink.url}>
+          {navLink.title}
+        </NavLink>
+      ))}
+    </NavLinks>
+  ]
 //   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
 //   const toggleQuestion = questionIndex => {
@@ -134,7 +117,7 @@ export default ({
     <>
     
     <AnimationRevealPage>
-      <Container2><StyledHeader links={navLinks} /></Container2>
+      <Container2><StyledHeader links={navLinks3} /></Container2>
       <Hero />
         
         <Column>

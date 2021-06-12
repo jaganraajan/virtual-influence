@@ -55,21 +55,22 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   }
 `;
 
-export default () => {
-  const navLinks = [
+export default (navLinks) => {
+  const navLinks3 = [
     <NavLinks key={1}>
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/about">About</NavLink>
-      <NavLink href="/interview">Interview</NavLink>
-
-    </NavLinks>,
-  ];
+      {navLinks.navLinks.navLinks.map((navLink) => (
+        <NavLink href={navLink.url}>
+          {navLink.title}
+        </NavLink>
+      ))}
+    </NavLinks>
+  ]
 
   return (
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader links={navLinks3} />
         <TwoColumn>
           <LeftColumn>
             <Notification>37th Committee of Daffodils Toastmasters Club</Notification>

@@ -43,40 +43,22 @@ const SlantedBackground = styled.span`
   }
 `;
 
-export default () => {
-  const navLinks = [
+export default (navLinks) => {
+  const navLinks3 = [
     <NavLinks key={1}>
-      <NavLink href="/">
-        Home
-      </NavLink>
-      <NavLink href="/about">
-        About
-      </NavLink>
-      {/* <NavLink href="/articles">
-        Articles
-      </NavLink>
-      <NavLink href="#">
-        Artwork
-      </NavLink>
-      <NavLink href="#">
-        Milestones
-      </NavLink> */}
-      <NavLink href="/interview">
-        Interview
-      </NavLink>
-    </NavLinks>,
-    // <NavLinks key={2}>
-    //   <PrimaryLink href="/#">
-        
-    //   </PrimaryLink>
-    // </NavLinks>
-  ];
+      {navLinks.navLinks.map((navLink) => (
+        <NavLink href={navLink.url}>
+          {navLink.title}
+        </NavLink>
+      ))}
+    </NavLinks>
+  ]
 
   return (
     <Container>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
+        <StyledHeader links={navLinks3} />
         <Content>
           <Heading>
               <SlantedBackground>Virtual Influence</SlantedBackground>

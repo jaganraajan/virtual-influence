@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import { useParams } from 'react-router-dom';
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -27,9 +28,9 @@ const AuthorName = tw.h6`font-semibold text-lg`;
 const AuthorProfile = tw.p`text-secondary-100 text-sm`;
 
 const StyledHeader = styled(Header)`
-  ${tw`p-5 pt-8 max-w-none w-full`}
+  ${tw`pt-8 max-w-none w-full`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
-    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300 `}
+    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
@@ -37,18 +38,15 @@ const StyledHeader = styled(Header)`
 `;
 
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
-const Container2 = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: linear-gradient(#414141, #000000);`;
+const Container2 = styled(motion.div)(props => [
+  `background-image: url("${props.imageSrc}"), linear-gradient(#000000, #222222);`,
+  tw`relative -mx-8 -mt-8 bg-center bg-contain bg-no-repeat h-4/6 min-h-128`
+]);
 
-const Container3 = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-4/6 min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1585974738771-84483dd9f89f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
-`;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-25`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-50`;
 
-const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-144 flex-auto flex-col `;
+const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-128 flex-auto flex-col `;
 const Content = tw.div`absolute left-0 bottom-0 px-4  flex-1 flex-col justify-start items-start`;
 // const Content = tw.div`px-4 float-bottom`;
 
@@ -62,7 +60,7 @@ const Heading2 = styled.h1`
 
 
 const Text = styled.div`
-  ${tw`text-lg  text-gray-800`}
+  ${tw`text-lg text-center mx-auto max-w-4xl mb-10 text-black whitespace-pre-wrap`}
   p {
     ${tw`ml-4 lg:w-1/2 justify-center leading-loose`}
   }
@@ -106,16 +104,47 @@ const RecentPostsContainer = styled.div`
 `;
 const PostTextContainer = tw.div``
 
+
+const Heading3 = styled.h3`
+  ${tw`block p-5 text-3xl text-left sm:text-2xl lg:text-3xl xl:text-4xl font-black text-gray-500 leading-snug my-5 text-right`}`;
+
+  const HorizontalLine = () => (
+    <hr
+        style={{
+            color: "black",
+            height: 10
+        }}
+    />
+  );
+
 export default (navLinks) => {
-    const navLinks3 = [
-        <NavLinks key={1}>
-          {navLinks.navLinks.map((navLink) => (
-            <NavLink href={navLink.url}>
-              {navLink.title}
-            </NavLink>
-          ))}
-        </NavLinks>
-      ]
+  const navLinks3 = [
+    <NavLinks key={1}>
+      {navLinks.navLinks.map((navLink) => (
+        <NavLink href={navLink.url}>
+          {navLink.title}
+        </NavLink>
+      ))}
+    </NavLinks>
+  ]
+  const poems = [
+  {
+    title: "At home, we’ve stayed….",
+    author: "TM Keshav",
+    authorPic: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/keshav.jpg?alt=media&token=c20b5165-0439-4704-8ad6-ea29c04e8ef0",
+    article: "Stay at Home, Stay Safe is the message we hear each day,\n There is an unseen virus lurking around, let's keep it at bay.\n Our daily routines have been affected, it has taken time to adjust,\nIt's killing many people, businesses have gone bust.\n\nWe can walk the empty streets that are within our gates, \n Greet friends and neighbours, who may not be our best mates.\n But it's interesting how people's lives can be,\n When you take time to talk and share. \n\n Inside the house is polished and the furniture dusted and glows,\n The garden is weed-free, cupboards rearrange, items in a row.\n Old receipts and papers sorted and committed to the bins,\n With so much time to spare each day, where do we begin?\n\n Be thankful for our homes, our families and friends,\n What is happening around the world is hard to comprehend.\n Our village life-style and all it offers gives us a feeling of security,\n And we will adjust to these difficult times because of our maturity.\n Someday this all will end.\n Someday,we just hope this all will end.",
+    imgSrc: "https://images.unsplash.com/photo-1585331505473-7586f9cb0854?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+  }, 
+  {
+    title: "TM Harini",
+    author: "TM Harini",
+    authorPic: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/harini2.jpg?alt=media&token=043194c0-5a44-4087-b07a-77a4405f65d2",
+    article: "I was hoping to say goodbye to you, not sure how time flew; \n Spring brought tears and in summer, I drowned in my fears.\n I bit my tongue while I cried, no matter how hard I tried;\n I needed to know I’m not alone, so touch me through the phone.\n\n Your words nursed my wounds, your tune guided me away from doom\n I can feel myself slip away; to the darkest parts of reality my mind sways;\n It’s a fall I’m willing to take, my nerves I have to shake.\n I need to find my way back home, so touch me through the phone.\n\n Years turned to days, days turned to seconds, seconds held together by pain I reckon.\n Ink on my paper, forming patterns like Skyscrapers, hoping the highs describe my lows\n I hear the stream flow, I see winter’s first snow.. filling myself up one last time;\n It’s almost time for me to go, so I beg you! Touch me through the phone.",
+    imgSrc: "https://images.unsplash.com/photo-1488509082528-cefbba5ad692?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+  },
+]
+  const { number } = useParams()
+
   // This setting is for animating the post background image on hover
   const postBackgroundSizeAnimation = {
     rest: {
@@ -194,37 +223,29 @@ export default (navLinks) => {
 
   return (
     <AnimationRevealPage>
-        <Container2><StyledHeader links={navLinks3} /></Container2>
-        
-
+      <Container2 imageSrc={poems[number-1].imgSrc}>
+        <OpacityOverlay />
+        <HeroContainer>
+          <StyledHeader links={navLinks3} />
+          <Content>
+            <Heading2>
+            {poems[number-1].title}
+            </Heading2>
+            {/* <PrimaryAction>Search Events Near Me</PrimaryAction> */}
+          </Content>
+        </HeroContainer>
+      </Container2>
       <Container>
-      <Text>
-            <p>Last updated: April 21, 2020</p>
-
-            <p>
-              This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-              information when You use the Service and tells You about Your privacy rights and how the law protects You.
-            </p>
-
-            <p>
-              We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
-              collection and use of information in accordance with this Privacy Policy.
-            </p>
-
-            <h1>Interpretation and Definitions</h1>
-            <h2>Interpretation</h2>
-            <p>
-              The words of which the initial letter is capitalized have meanings defined under the following conditions.
-            </p>
-            <p>
-              The following definitions shall have the same meaning regardless of whether they appear in singular or in
-              plural.
-            </p>
-      </Text>
+      
       <ContentWithPaddingXl>
+      <Text>
+            {poems[number-1].article}
+      </Text>
+      <Heading3>- {poems[number-1].author}</Heading3>
+      <HorizontalLine />
         <Row>
           <PopularPostsContainer>
-            <Heading>Popular Posts</Heading>
+            <Heading>Recommended Posts</Heading>
             <PostsContainer>
               {popularPosts.map((post, index) => (
                 <Post key={index} href={post.url} className="group" initial="rest" whileHover="hover" animate="rest">
@@ -246,8 +267,8 @@ export default (navLinks) => {
               ))}
             </PostsContainer>
           </PopularPostsContainer>
-          <RecentPostsContainer>
-            <Heading>Recent Posts</Heading>
+          <RecentPostsContainer> 
+            <Heading>Other Posts</Heading>
             <PostsContainer>
               {recentPosts.map((post, index) => (
               <Post key={index} href={post.url} className="group">

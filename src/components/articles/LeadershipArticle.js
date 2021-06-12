@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import { useParams } from 'react-router-dom';
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { css } from "styled-components/macro"; //eslint-disable-line
@@ -27,9 +28,9 @@ const AuthorName = tw.h6`font-semibold text-lg`;
 const AuthorProfile = tw.p`text-secondary-100 text-sm`;
 
 const StyledHeader = styled(Header)`
-  ${tw`p-5 pt-8 max-w-none w-full`}
+  ${tw`pt-8 max-w-none w-full`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
-    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300 `}
+    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
@@ -37,18 +38,15 @@ const StyledHeader = styled(Header)`
 `;
 
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
-const Container2 = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
-  background-image: linear-gradient(#414141, #000000);`;
+const Container2 = styled(motion.div)(props => [
+  `background-image: url("${props.imageSrc}"), linear-gradient(#000000, #222222);`,
+  tw`relative -mx-8 -mt-8 bg-center bg-contain bg-no-repeat h-4/6 min-h-128`
+]);
 
-const Container3 = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-4/6 min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1585974738771-84483dd9f89f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80");
-`;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-25`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-50`;
 
-const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-144 flex-auto flex-col `;
+const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-128 flex-auto flex-col `;
 const Content = tw.div`absolute left-0 bottom-0 px-4  flex-1 flex-col justify-start items-start`;
 // const Content = tw.div`px-4 float-bottom`;
 
@@ -62,7 +60,7 @@ const Heading2 = styled.h1`
 
 
 const Text = styled.div`
-  ${tw`text-lg  text-gray-800`}
+  ${tw`text-lg mx-auto max-w-4xl mb-10 text-black whitespace-pre-wrap`}
   p {
     ${tw`ml-4 lg:w-1/2 justify-center leading-loose`}
   }
@@ -106,16 +104,39 @@ const RecentPostsContainer = styled.div`
 `;
 const PostTextContainer = tw.div``
 
+const HorizontalLine = () => (
+  <hr
+      style={{
+          color: "black",
+          height: 10
+      }}
+  />
+);
+
 export default (navLinks) => {
-    const navLinks3 = [
-        <NavLinks key={1}>
-          {navLinks.navLinks.map((navLink) => (
-            <NavLink href={navLink.url}>
-              {navLink.title}
-            </NavLink>
-          ))}
-        </NavLinks>
-      ]
+  const navLinks3 = [
+    <NavLinks key={1}>
+      {navLinks.navLinks.map((navLink) => (
+        <NavLink href={navLink.url}>
+          {navLink.title}
+        </NavLink>
+      ))}
+    </NavLinks>
+  ]
+  const leader = [
+  {
+    title: "Prakash Tamhankar, DTM",
+    article: "If someone would have asked me in Feb 2020 to do all my office work remotely from home, especially with my role as a manager and leader, I would have balked at him.  With all work getting done depending a lot on the relations with and among the team, I would be disinclined to even dream it. \n\n Seventeen months later, I am doing exactly that, building relationships remotely through available technology, getting the office work done remotely with virtual influence.  The skill has become so critical for all of us in this virtual world that the current pandemic situation has forced us into, it is a matter of survival of some of us. \n\n How did this dramatic shift happen?  What made us all convinced that we can overcome the limitation that the virus imposed on us?  What did each of us do to make the change? \n\n It all happened because we decided to change gears, do what it takes to succeed with all the limitations that the situation gave us.  We adapted ourselves quickly to the new normal, so much so that it has become our second nature, and I am facing difficulty with the team when I request them to be back at office. \n\n The key questions are: Will we adapt again? Will we be the agents of change again? Another year will tell.  \n\n Till then, keep learning, keep enjoying!",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3"
+  }, 
+  {
+    title: "Divya Rajvanshy, DTM",
+    article: "“You cannot go out or meet anyone” – these are the words that pretty much defined life in the last few months. Home isolation meant no get-togethers, office gossips, gyms, restaurants and of course my favorite part of the weekend – Toastmasters meetings. The thought of not being able to meet anyone created a good deal of anxiety in me. I started calling my family and friends to check if they are okay. Turns out, they were in the same boat, emotionally, as me. This led to more frequent calls and opened a plethora of opportunities to build relations like never before! \n\n Friday evenings turned into long hours Dumb Charades with friends located in different parts of the world. Celebration of birthdays became incomplete without cake cutting over zoom calls. Creativity in Toastmasters Meetings went to a next level altogether making weekends productive. \n\n Daffodils Toastmasters Club has always been a gem for Division C – by setting an example of conducting some of the most interesting online meetings, bringing some joy in our lives during these difficult times. \n\n In the fear of losing connect, we used technology to connect more often than ever before. Let us remember this feeling when we enter the post-covid era and continue to maintain these relationships both offline and online.",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/divya.jpg?alt=media&token=636360a1-0bca-4880-acdd-472b2e0f1c19"
+  },
+]
+  const { number } = useParams()
+
   // This setting is for animating the post background image on hover
   const postBackgroundSizeAnimation = {
     rest: {
@@ -194,37 +215,28 @@ export default (navLinks) => {
 
   return (
     <AnimationRevealPage>
-        <Container2><StyledHeader links={navLinks3} /></Container2>
-        
-
+      <Container2 imageSrc={leader[number-1].imgSrc}>
+        <OpacityOverlay />
+        <HeroContainer>
+          <StyledHeader links={navLinks3} />
+          <Content>
+            <Heading2>
+            {leader[number-1].title}
+            </Heading2>
+            {/* <PrimaryAction>Search Events Near Me</PrimaryAction> */}
+          </Content>
+        </HeroContainer>
+      </Container2>
       <Container>
-      <Text>
-            <p>Last updated: April 21, 2020</p>
-
-            <p>
-              This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-              information when You use the Service and tells You about Your privacy rights and how the law protects You.
-            </p>
-
-            <p>
-              We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
-              collection and use of information in accordance with this Privacy Policy.
-            </p>
-
-            <h1>Interpretation and Definitions</h1>
-            <h2>Interpretation</h2>
-            <p>
-              The words of which the initial letter is capitalized have meanings defined under the following conditions.
-            </p>
-            <p>
-              The following definitions shall have the same meaning regardless of whether they appear in singular or in
-              plural.
-            </p>
-      </Text>
+      
       <ContentWithPaddingXl>
+      <Text>
+            {leader[number-1].article}
+      </Text>
+      <HorizontalLine />
         <Row>
           <PopularPostsContainer>
-            <Heading>Popular Posts</Heading>
+            <Heading>Recommended Posts</Heading>
             <PostsContainer>
               {popularPosts.map((post, index) => (
                 <Post key={index} href={post.url} className="group" initial="rest" whileHover="hover" animate="rest">
@@ -246,8 +258,8 @@ export default (navLinks) => {
               ))}
             </PostsContainer>
           </PopularPostsContainer>
-          <RecentPostsContainer>
-            <Heading>Recent Posts</Heading>
+          <RecentPostsContainer> 
+            <Heading>Other Posts</Heading>
             <PostsContainer>
               {recentPosts.map((post, index) => (
               <Post key={index} href={post.url} className="group">
