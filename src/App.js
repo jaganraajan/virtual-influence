@@ -143,12 +143,12 @@ export default function App() {
       title: "Articles"
     },
     {
-      url: "/gallery",
-      title: "Gallery"
-    },
-    {
       url: "/interview",
       title: "Interview"
+    },
+    {
+      url: "/gallery",
+      title: "Gallery"
     }
   ];
 
@@ -206,7 +206,7 @@ export default function App() {
             {/* <MainFeature /> */}
             <Portfolio />
             <Testimonial />
-            <Footer2 />
+            <Footer2 navLinks={navLinks}/>
           </AnimationRevealPage>
         </Route>
       </Switch>

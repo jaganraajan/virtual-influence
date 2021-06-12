@@ -29,7 +29,8 @@ const SocialLink = styled.a`
 `;
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
-export default () => {
+export default (navLinks) => {
+  console.log(navLinks);
   return (
     <Container>
       <Content>
@@ -39,9 +40,11 @@ export default () => {
             <LogoText>Virtual Influence</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/interview">Interview</Link>
+              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
+              <Link href="/articles">Articles</Link>
+              <Link href="/interview">Interview</Link>
+              <Link href="/gallery">Gallery</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://www.facebook.com/daffodilstoastmasters/">

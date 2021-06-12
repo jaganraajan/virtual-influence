@@ -7,6 +7,8 @@ import { SectionHeading } from "components/misc/Headings.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import Portfolio from "components/cards/ProfileThreeColGrid2.js";
+import Footer from "components/footers/MiniCenteredFooter.js";
 
 const Row = tw.div`flex flex-col lg:flex-row -mb-10`;
 const Heading = tw(SectionHeading)`text-left lg:text-4xl xl:text-5xl`;
@@ -197,72 +199,8 @@ export default (navLinks) => {
         <Container2><StyledHeader links={navLinks3} /></Container2>
         
 
-      <Container>
-      <Text>
-            <p>Last updated: April 21, 2020</p>
-
-            <p>
-              This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-              information when You use the Service and tells You about Your privacy rights and how the law protects You.
-            </p>
-
-            <p>
-              We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
-              collection and use of information in accordance with this Privacy Policy.
-            </p>
-
-            <h1>Interpretation and Definitions</h1>
-            <h2>Interpretation</h2>
-            <p>
-              The words of which the initial letter is capitalized have meanings defined under the following conditions.
-            </p>
-            <p>
-              The following definitions shall have the same meaning regardless of whether they appear in singular or in
-              plural.
-            </p>
-      </Text>
-      <ContentWithPaddingXl>
-        <Row>
-          <PopularPostsContainer>
-            <Heading>Popular Posts</Heading>
-            <PostsContainer>
-              {popularPosts.map((post, index) => (
-                <Post key={index} href={post.url} className="group" initial="rest" whileHover="hover" animate="rest">
-                  <Image
-                    transition={{ duration: 0.3 }}
-                    variants={postBackgroundSizeAnimation}
-                    imageSrc={post.postImageSrc}
-                  />
-                  <Title>{post.title}</Title>
-                  <Description>{post.description}</Description>
-                  <AuthorInfo>
-                    <AuthorImage src={post.authorImageSrc} />
-                    <AuthorNameAndProfession>
-                      <AuthorName>{post.authorName}</AuthorName>
-                      <AuthorProfile>{post.authorProfile}</AuthorProfile>
-                    </AuthorNameAndProfession>
-                  </AuthorInfo>
-                </Post>
-              ))}
-            </PostsContainer>
-          </PopularPostsContainer>
-          <RecentPostsContainer>
-            <Heading>Recent Posts</Heading>
-            <PostsContainer>
-              {recentPosts.map((post, index) => (
-              <Post key={index} href={post.url} className="group">
-                <PostTextContainer>
-                  <Title>{post.title}</Title>
-                  <AuthorName>{post.authorName}</AuthorName>
-                </PostTextContainer>
-                <Image imageSrc={post.postImageSrc} />
-              </Post>
-              ))}
-            </PostsContainer>
-          </RecentPostsContainer>
-        </Row>
-      </ContentWithPaddingXl>
-    </Container>
+        <Portfolio />
+        <Footer />
     </AnimationRevealPage>
   );
 };

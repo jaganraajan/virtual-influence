@@ -56,12 +56,21 @@ export default ({
   const leadershipPosts = [
     {
       imageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
+      author: "Sagnik Biswas, DTM - District 92 Program Quality Director",
+      category: "SEO",
+      title: "Sagnik Biswas, DTM- District 92 Program Quality Director",
+      description: "In this year, we have seen and heard a hundred different ways to connect with one another, and we...",
+      url: "/articles/leadership/1"
+    },
+    {
+      imageSrc:
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash2.png.jpg?alt=media&token=e973cc9c-faf8-4155-9606-eb320df9cb88",
       author: "Prakash Tamhankar, DTM - District 92 Public Relations Manager",
       category: "SEO",
       title: "Prakash Tamhankar, DTM - District 92 Public Relations Manager",
       description: "If someone would have asked me in Feb 2020 to do all my office work remotely from home, especially with my role as a manager...",
-      url: "/articles/leadership/1"
+      url: "/articles/leadership/2"
     },
     {
       imageSrc:
@@ -70,7 +79,7 @@ export default ({
       category: "Advertising",
       title: "Divya Rajvanshy, DTM - Division C Director",
       description: "“You cannot go out or meet anyone” – these are the words that pretty much defined life in the last few months. Home isolation...",
-      url: "/articles/leadership/2"
+      url: "/articles/leadership/3"
     }
   ];
 
@@ -164,8 +173,8 @@ export default ({
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/harini2.jpg?alt=media&token=043194c0-5a44-4087-b07a-77a4405f65d2",
       author: "TM Harini",
       category: "Through my phone",
-      title: "Creating The perfect advertisement campaign",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Before I'm gone",
+      description: "I was hoping to say goodbye to you, not sure how time flew; \n Spring brought tears and in summer, I drowned in my...",
       url: "/articles/poem/2"
     },
   ];
