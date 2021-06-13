@@ -7,9 +7,10 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
 import TeamIllustrationSrc from "images/team-illustration-2.svg";
+import Portfolio from "components/cards/ProfileThreeColGrid5.js";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
+const TwoColumn = tw.div`flex justify-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumn = styled(Column)(props => [
@@ -49,7 +50,12 @@ export default ({
   subheading = "Our Expertise",
   heading = (
     <>
-      We have the most <span tw="text-primary-500">professional</span> marketing team.
+     INTRA CLUB ACHIEVEMENTS:
+    </>
+  ),
+  heading2 = (
+    <>
+     CONTEST WINNERS
     </>
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -67,12 +73,12 @@ export default ({
   const defaultFeatures = [
     {
       Icon: BriefcaseIcon,
-      title: "Professionalism",
+      title: "Toastmasters of the Month Award",
       description: "We have the best professional marketing people across the globe just to work with you."
     },
     {
       Icon: MoneyIcon,
-      title: "Affordable",
+      title: "Mentor of the Month Award",
       description: "We promise to offer you the best rate we can - at par with the industry standard."
     }
   ];
@@ -82,31 +88,39 @@ export default ({
   return (
     <Container>
       <TwoColumn>
-        <ImageColumn>
-          <Image imageSrc={TeamIllustrationSrc} />
-        </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
-          <TextContent>
-            <Subheading>{subheading}</Subheading>
-            <Heading>{heading}</Heading>
-            <Description>{description}</Description>
-            <Features>
-              {features.map((feature, index) => (
-                <Feature key={index}>
-                  <FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer>
-                  <FeatureText>
+          {/* <TextContent> */}
+            {/* <Subheading>{subheading}</Subheading> */}
+            {/* <Heading>{heading}</Heading> */}
+            {/* <Description>{description}</Description> */}
+            {/* <Features> */}
+              {/* {features.map((feature, index) => ( */}
+                {/* <Feature key={index}> */}
+                  {/* <FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer> */}
+                  {/* <FeatureText>
                     <FeatureHeading>{feature.title}</FeatureHeading>
                     <FeatureDescription>{feature.description}</FeatureDescription>
                   </FeatureText>
                 </Feature>
               ))}
             </Features>
-            <PrimaryButton as="a" href={primaryButtonUrl}>
-              {primaryButtonText}
-            </PrimaryButton>
+          </TextContent> */}
+          <TextContent>
+            {/* <Subheading>{subheading}</Subheading> */}
+            <Heading>{heading2}</Heading>
+        < Portfolio />
+            {/* <Description>{description}</Description> */}     
           </TextContent>
         </TextColumn>
       </TwoColumn>
+      
     </Container>
   );
 };
+
+// The following are the awards won by Daffodils at Division Level. Awards at District Level will be announced on June 30th.
+
+// Membership Rentention Excellence 
+// Super 7
+// 5+ DCP
+// New Petals

@@ -3,8 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
-import Jagan from "images/jagan.jpg";
-import Aashish from "images/aashish.jpg";
+import Portfolio from "components/cards/ProfileThreeColGrid4.js"
 
 
 const Container = tw.div`relative`;
@@ -25,9 +24,11 @@ const Image = styled.div(props => [
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-top mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
-const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
+const Subtitle = tw.div`mt-4 font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-3xl font-bold text-gray-900`;
-const Description = tw.p`mt-2 text-sm leading-loose`;
+const Title2 = tw.h4`text-3xl mt-4 font-bold text-gray-900`;
+const Title3 = tw.h4`text-3xl mt-16 text-center font-bold text-gray-900`;
+const Description = tw.p`mt-2 text-sm leading-loose whitespace-pre-wrap`;
 const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
 const SvgDotPattern1 = tw(
@@ -46,22 +47,22 @@ const SvgDotPattern4 = tw(
 export default () => {
   const cards = [
     {
-      imageSrc:
-        Jagan,
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fjagan.jpg?alt=media&token=4ed05b4d-16ef-403b-a072-1c4da6f85bf1",
       subtitle: "TM Jagadeesh R",
       title: "Editor's Desk",
+      role: "Vice President of Public Relations",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reiciendis praesentium perferendis qui quas magnam? Pariatur ratione quidem ipsa illo nihil, molestiae perspiciatis libero soluta consectetur hic consequuntur deserunt et, ab totam accusantium! Excepturi expedita quis culpa debitis illum nobis nam consequatur repellendus, pariatur laboriosam voluptatem quo sed a ex itaque error, recusandae nemo adipisci. Nostrum neque error quis eligendi doloribus velit beatae, asperiores repudiandae id illo vero deleniti facilis, ad distinctio obcaecati ipsum qui consectetur eaque sequi vitae sit. Deserunt nostrum, odio cumque fugiat praesentium totam enim nihil ea voluptatem, nisi impedit accusamus, molestiae exercitationem necessitatibus ex velit. Ratione, obcaecati suscipit quidem natus accusamus nihil repellat magni quae unde minus animi eveniet facilis nam ad corrupti eligendi est! Asperiores, sunt possimus error aperiam esse vero minus necessitatibus molestias facilis magni ad iusto et autem odit quibusdam blanditiis, labore fugit? Impedit ratione quos molestiae error, sit saepe praesentium ea nihil consectetur quam minima corrupti quia laborum soluta quaerat nam doloribus vitae expedita iure voluptates exercitationem consequatur rerum non. ",
+        "Business partners, leaders, trusted advisors,  sales people, collaborators, experts – every one of us needs influencing skills.  We want people to buy into our ideas, follow our lead and trust what we say.\n\nBut the pandemic has truly changed how we interact in the world. We rely on technology more than ever and most of our interaction with others is virtual. The question now is how do you build these relationships virtually and build the trust?\n\nAt the start of my term as the Vice President of Public Relations, I found it hard to develop virtual relationship with my President and my associates. As I grew and learnt how to navigate this new world, I gained valuable experiences which showed me the optimal way to build stronger relationships.\n\nThis website is our way of influencing you by providing a user-friendly way of reading our newsletter. We hope you enjoy reading this as much as we enjoyed creating this website.  ",
       url: ""
     },
 
     {
-      imageSrc:
-        Aashish,
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Faashish.jpg?alt=media&token=241caa67-9cd5-43a6-ae38-171a8ff97223",
       subtitle: "TM Aashish",
       title: "President's Desk",
+      role: "President of Daffodils Toastmasters Club",
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ducimus in eveniet assumenda optio sunt cum minima magni, nam harum reiciendis amet recusandae magnam eaque accusamus veritatis culpa reprehenderit asperiores cupiditate blanditiis quaerat eum neque qui numquam? Fugit aliquid quidem, ipsum ad inventore aspernatur itaque a quo nobis quibusdam nesciunt accusantium, sed quae modi repellendus, possimus ducimus eos. Sit doloribus ipsa ad tempora dolores expedita voluptatibus. Est adipisci fugit optio libero cupiditate iusto aliquid porro rerum laudantium quaerat earum consequuntur explicabo dignissimos veniam, maiores alias perspiciatis vel, ad, eligendi ex vitae. Voluptate consequatur, in sunt quod eveniet laborum autem recusandae aspernatur laudantium! Ipsum provident voluptas pariatur hic aliquam, similique fuga tenetur nostrum possimus alias atque sequi deserunt. Optio eos saepe explicabo qui possimus voluptatem, perspiciatis odit dolore? Eligendi, aut. Eius inventore magni in nam cumque minus perspiciatis illo illum qui commodi eaque amet odit dolorum veritatis necessitatibus exercitationem, ipsam ut error corporis quia. Blanditiis delectus minima fugit. Voluptas ad, suscipit laudantium, aspernatur facilis illum ratione nulla quae molestiae, mollitia distinctio?",
+        "Toastmasters, a non-profit organization is one of the best examples to see the difference between power and influence. It shines because the platform has influence as a diamond made of constructive critisism, rightly valued experience of seasoned Toastmasters, and encouraging environment. Lately, it has been constrained to virtual connections. Although it started slow at the beginning of the pandemic, it has grown exponentially over the last one a half year. A lot of us has adapted quickly to this setting and we are able to virtually influence each other. A good example of that is the building of relationships over the virtual platform in my home club, or rather a family, Daffodils Toastmasters Club!",
       url: "https://timerse.com"
     },
   ];
@@ -76,19 +77,29 @@ export default () => {
           </HeadingDescription>
         </HeadingInfoContainer>
 
-        {/* <Content>
-          {cards.map((card, i) => (
-            <Card key={i} reversed={i % 2 === 1}>
-              <Image imageSrc={card.imageSrc} />
+        <Content>
+            <Card reversed={true}>
+              <Image imageSrc={cards[0].imageSrc} />
               <Details>
-                
-                <Title>{card.title}</Title>
-                <Description>{card.description}</Description>
-                <Subtitle>{card.subtitle}</Subtitle>
+                <Title>{cards[0].title}</Title>
+                <Description>{cards[0].description}</Description>
+                <Title2>{cards[0].subtitle}</Title2>
+                <Subtitle>{cards[0].role}</Subtitle>
               </Details>
             </Card>
-          ))}
-        </Content> */}
+            <Title3>VPPR Associates</Title3>
+            <Portfolio />
+
+            <Card reversed={false}>
+              <Image imageSrc={cards[1].imageSrc} />
+              <Details>
+                <Title>{cards[1].title}</Title>
+                <Description>{cards[1].description}</Description>
+                <Title2>{cards[1].subtitle}</Title2>
+                <Subtitle>{cards[1].role}</Subtitle>
+              </Details>
+            </Card>
+        </Content>
       </SingleColumn>
       <SvgDotPattern1 />
       <SvgDotPattern2 />

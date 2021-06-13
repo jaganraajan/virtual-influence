@@ -145,7 +145,7 @@ export default (navLinks) => {
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "TM Harini",
-        authorProfile: "Vlogger",
+        authorProfile: "",
         url: "/articles/poem/2"
       },
       {
@@ -178,7 +178,7 @@ export default (navLinks) => {
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "TM Shree Nidhi",
-        authorProfile: "Vlogger",
+        authorProfile: "",
         url: "/articles/member/2"
       },
       {
@@ -190,7 +190,7 @@ export default (navLinks) => {
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "TM Apoorva",
-        authorProfile: "Vlogger",
+        authorProfile: "",
         url: "/articles/member/4"
       }
     ]

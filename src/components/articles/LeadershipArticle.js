@@ -127,7 +127,7 @@ export default (navLinks) => {
   const leader = [
   {
     title: "Sagnik Biswas, DTM",
-    article: "In this year, we have seen and heard a hundred different ways to connect with one another, and we have touched each other's lives through the virtual medium, and we have found new ways to collaborate, connect and influence others. But the basis of it all is in showing up, with the best of our capabilities. I believe that is the root of any form of influence, that you show up consistently and make a difference in the lives of others. Whichever medium it may be, as long as we choose to work together to make life easier for someone in any way, we made a change happen. \n\n I wish the members of Daffodils Toastmasters Club all the very best and I hope that you and your families are doing well and keeping safe.",
+    article: "In this year, we have seen and heard a hundred different ways to connect with one another, and we have touched each other's lives through the virtual medium, and we have found new ways to collaborate, connect and influence others. But the basis of it all is in showing up, with the best of our capabilities. I believe that is the root of any form of influence, that you show up consistently and make a difference in the lives of others. Whichever medium it may be, as long as we choose to work together to make life easier for someone in any way, we made a change happen. \n\nI wish the members of Daffodils Toastmasters Club all the very best and I hope that you and your families are doing well and keeping safe.",
     imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
     authorPic: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
     popularPosts : [
@@ -159,7 +159,7 @@ export default (navLinks) => {
   }, 
   {
     title: "Prakash Tamhankar, DTM",
-    article: "If someone would have asked me in Feb 2020 to do all my office work remotely from home, especially with my role as a manager and leader, I would have balked at him.  With all work getting done depending a lot on the relations with and among the team, I would be disinclined to even dream it. \n\n Seventeen months later, I am doing exactly that, building relationships remotely through available technology, getting the office work done remotely with virtual influence.  The skill has become so critical for all of us in this virtual world that the current pandemic situation has forced us into, it is a matter of survival of some of us. \n\n How did this dramatic shift happen?  What made us all convinced that we can overcome the limitation that the virus imposed on us?  What did each of us do to make the change? \n\n It all happened because we decided to change gears, do what it takes to succeed with all the limitations that the situation gave us.  We adapted ourselves quickly to the new normal, so much so that it has become our second nature, and I am facing difficulty with the team when I request them to be back at office. \n\n The key questions are: Will we adapt again? Will we be the agents of change again? Another year will tell.  \n\n Till then, keep learning, keep enjoying!",
+    article: "If someone would have asked me in Feb 2020 to do all my office work remotely from home, especially with my role as a manager and leader, I would have balked at him.  With all work getting done depending a lot on the relations with and among the team, I would be disinclined to even dream it. \n\nSeventeen months later, I am doing exactly that, building relationships remotely through available technology, getting the office work done remotely with virtual influence.  The skill has become so critical for all of us in this virtual world that the current pandemic situation has forced us into, it is a matter of survival of some of us. \n\nHow did this dramatic shift happen?  What made us all convinced that we can overcome the limitation that the virus imposed on us?  What did each of us do to make the change? \n\nIt all happened because we decided to change gears, do what it takes to succeed with all the limitations that the situation gave us.  We adapted ourselves quickly to the new normal, so much so that it has become our second nature, and I am facing difficulty with the team when I request them to be back at office. \n\nThe key questions are: Will we adapt again? Will we be the agents of change again? Another year will tell.  \n\nTill then, keep learning, keep enjoying!",
     imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
     authorPic: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
     popularPosts : [
@@ -176,47 +176,47 @@ export default (navLinks) => {
         url: "/articles/leadership/3"
       }, {
         postImageSrc:
-          "https://images.unsplash.com/photo-1512758315355-cdbf0fd81fb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
         authorImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/Kumaran%20sir.jpg?alt=media&token=a9b07163-e683-4643-832f-b93580bb2da3",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
         title: "The Invisible Rope",
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-        authorName: "Kumaran M. Pethi, DTM",
-        authorProfile: "",
-        url: "/articles/member/1"
+        authorName: "Sagnik Biswas, DTM",
+        authorProfile: "District 92 Program Quality Director",
+        url: "/articles/leadership/1"
       }
     ]
   }, 
   {
     title: "Divya Rajvanshy, DTM",
-    article: "“You cannot go out or meet anyone” – these are the words that pretty much defined life in the last few months. Home isolation meant no get-togethers, office gossips, gyms, restaurants and of course my favorite part of the weekend – Toastmasters meetings. The thought of not being able to meet anyone created a good deal of anxiety in me. I started calling my family and friends to check if they are okay. Turns out, they were in the same boat, emotionally, as me. This led to more frequent calls and opened a plethora of opportunities to build relations like never before! \n\n Friday evenings turned into long hours Dumb Charades with friends located in different parts of the world. Celebration of birthdays became incomplete without cake cutting over zoom calls. Creativity in Toastmasters Meetings went to a next level altogether making weekends productive. \n\n Daffodils Toastmasters Club has always been a gem for Division C – by setting an example of conducting some of the most interesting online meetings, bringing some joy in our lives during these difficult times. \n\n In the fear of losing connect, we used technology to connect more often than ever before. Let us remember this feeling when we enter the post-covid era and continue to maintain these relationships both offline and online.",
+    article: "“You cannot go out or meet anyone” – these are the words that pretty much defined life in the last few months. Home isolation meant no get-togethers, office gossips, gyms, restaurants and of course my favorite part of the weekend – Toastmasters meetings. The thought of not being able to meet anyone created a good deal of anxiety in me. I started calling my family and friends to check if they are okay. Turns out, they were in the same boat, emotionally, as me. This led to more frequent calls and opened a plethora of opportunities to build relations like never before! \n\nFriday evenings turned into long hours Dumb Charades with friends located in different parts of the world. Celebration of birthdays became incomplete without cake cutting over zoom calls. Creativity in Toastmasters Meetings went to a next level altogether making weekends productive. \n\nDaffodils Toastmasters Club has always been a gem for Division C – by setting an example of conducting some of the most interesting online meetings, bringing some joy in our lives during these difficult times. \n\nIn the fear of losing connect, we used technology to connect more often than ever before. Let us remember this feeling when we enter the post-covid era and continue to maintain these relationships both offline and online.",
     imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/divya.jpg?alt=media&token=636360a1-0bca-4880-acdd-472b2e0f1c19",
     authorPic: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/divya.jpg?alt=media&token=636360a1-0bca-4880-acdd-472b2e0f1c19",
     popularPosts : [
       {
         postImageSrc:
-          "https://images.unsplash.com/photo-1512758315355-cdbf0fd81fb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
         authorImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/Kumaran%20sir.jpg?alt=media&token=a9b07163-e683-4643-832f-b93580bb2da3",
-        title: "The Invisible Rope",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
+        title: "Virtual Influence",
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-        authorName: "Kumaran M. Pethi, DTM",
-        authorProfile: "",
-        url: "/articles/member/1"
+        authorName: "Prakash Tamhankar, DTM",
+        authorProfile: "District 92 Public Relations Manager",
+        url: "/articles/leadership/2"
       },
       {
         postImageSrc:
-          "https://images.unsplash.com/photo-1616587226157-48e49175ee20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
         authorImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/shreenidhi21.jpg?alt=media&token=0b23a1e9-0527-4a8d-a79e-9d5a3e0f2b81",
-        title: "Connect beyond Disconnections",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
+        title: "The Invisible Rope",
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-        authorName: "TM Shree Nidhi",
-        authorProfile: "",
-        url: "/articles/member/2"
+        authorName: "Sagnik Biswas, DTM",
+        authorProfile: "District 92 Program Quality Director",
+        url: "/articles/leadership/1"
       }
     ]
   },
@@ -331,7 +331,7 @@ export default (navLinks) => {
                     variants={postBackgroundSizeAnimation}
                     imageSrc={post.postImageSrc}
                   />
-                  <Title>{post.title}</Title>
+                  {/* <Title>{post.title}</Title> */}
                   {/* <Description>{post.description}</Description> */}
                   <AuthorInfo>
                     <AuthorImage src={post.authorImageSrc} />

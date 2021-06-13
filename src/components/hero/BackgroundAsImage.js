@@ -82,7 +82,7 @@ export default (navLinks) => {
               <br />
               <SlantedBackground>#ExtraMileEveryday</SlantedBackground>
             </Heading>
-            <PrimaryAction>Contact Us</PrimaryAction>
+            {/* <PrimaryAction>Contact Us</PrimaryAction> */}
           </LeftColumn>
           <RightColumn>
             {/* <StyledResponsiveVideoEmbed

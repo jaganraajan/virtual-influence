@@ -24,12 +24,18 @@ import SimpleIconImage from "images/simple-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
-
+import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
-import Toastmasters from "images/toastmaster1.png";
-import Toastmasters2 from "images/toastmaster2.png";
-import Daffodils from "images/dtm.jpg";
+// import Toastmasters from "images/toastmaster1.png";
+// import Toastmasters2 from "images/toastmaster2.png";
+// import Daffodils from "images/dtm.jpg";
+const Heading = tw(SectionHeading)`text-center`;
+const Description = tw.p`max-w-xl text-center mx-auto lg:mx-0  lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-secondary-100`;
 
+const Image = styled.div`
+  ${props => css`background: url("${props.imageSrc}") no-repeat;`}
+  ${tw`w-full h-144 bg-contain bg-center rounded`}
+`
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default (navLinks) => {
   return (
@@ -45,29 +51,33 @@ export default (navLinks) => {
         helped people from diverse backgrounds become more
         confident speakers, communicators, and leaders."
         primaryButtonText="See Portfolio"
-        imageSrc = {Toastmasters}/>
+        imageSrc = "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Ftoastmaster11.jpg?alt=media&token=080c243e-8cd1-48de-9c0b-961cf61daa3a"/>
       <MainFeature3/>
       <MainFeature1
-        subheading={<Subheading>Club Number: 1766 | Area C4 | District 92</Subheading>}
+        subheading={<Subheading>Club Number: 1766 | Area C4 | District 92  | Region 13</Subheading>}
         heading="DAFFODILS
         TOASTMASTERS CLUB"
-        description="Daffodils was conceptualised by its charter members who were a financial consultant, a laparoscopic surgeon, an orthodontist,
-        entrepreneurs in the software services, chemical and forestry
-        sectors, an HR professional and a banker!
-        The club secured its charter i.e. its official recognition from Toastmasters International on 12th June, 2003 and has gone from
-        strength to strength since then!
+        description="Daffodils Toastmasters Club was chartered on 12th
+        June 2003 and is a community club based in
+        Malleswaram. We are part of Area C4, Division C,
+        District 92 of Toastmasters International.
+        Our
+          biggest testimony comes from the
+          Executive Director of TMI, Daniel
+          Rex who termed Daffodils “The
+          Best Club In the World”.
         Daffodils has the right mix of youngsters and seasoned members,
         making it the ideal place for learning coupled with fun."
         buttonRounded={false}
         primaryButtonText="Contact Us"
-        imageSrc={Daffodils}
+        imageSrc="https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fdtm.jpg?alt=media&token=8dc224d8-df59-4460-88a6-58ce936aa4b0"
         textOnLeft={false}
       />
       <Features
         subheading={""}
         heading="Our Club's Mission"
-        description="Creating a warm, receptive environment where one
-        can acquire the poise and confidence to address an audience. To help
+        description="Creating a warm, encouraging environment where one
+        can acquire the poise, constructive feedback and confidence to address an audience. To help
         each other bloom and become better people."
         cards={[
           {
@@ -88,6 +98,9 @@ export default (navLinks) => {
         ]}
         linkText=""
       />
+      <Heading>DCP STATUS</Heading>;
+        <Description> The Distinguished Club Program (DCP) includes 10 goals that a club should strive to achieve each year, using the Club Success Plan as a guide.</Description>;
+      <Image imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/new%2FWhatsApp%20Image%202021-06-11%20at%208.16.15%20AM.jpeg?alt=media&token=5e5662a9-186a-418e-87c0-fc9006f44594"}></Image>
       <FAQ
         imageSrc={customerSupportIllustrationSrc}
         imageContain={true}

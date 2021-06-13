@@ -8,12 +8,16 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Portfolio from "components/cards/ProfileThreeColGrid2.js";
-import Portfolio3 from "components/cards/ProfileThreeColGrid3.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import { PrimaryButton } from "components/misc/Buttons";
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
+import PropTypes from "prop-types";
+import ResponsiveVideoEmbed from "helpers/ResponsiveVideoEmbed";
 
 const HeadingRow = tw.div`flex`;
-const Heading = tw(SectionHeading)`text-gray-900`;
+const Heading = tw(SectionHeading)`text-gray-900 text-center w-screen my-5`;
+// const Heading2 = tw(SectionHeading)`text-right text-gray-500`;
 const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
   ${tw`mt-10 w-full sm:w-1/2 lg:w-1/3 sm:pr-8`}
@@ -40,11 +44,18 @@ const Image = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
   ${tw`h-64 w-full bg-cover bg-center rounded-t-lg`}
 `;
+
+const Image2 = styled.div`
+  ${props => css`background-image: url("${props.imageSrc}");`}
+  ${tw`mt-10 min-h-144 w-full border-gray-500 bg-contain bg-no-repeat bg-top rounded-t-lg`}
+`;
+
+
 const Info = tw.div`p-8 border-2 border-t-0 rounded-lg rounded-t-none`;
 const Category = tw.div`uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose after:content after:block after:border-b-2 after:border-primary-500 after:w-8`;
 const CreationDate = tw.div`mt-4 uppercase text-gray-600 italic font-semibold text-xs`;
 const Title = tw.div`mt-1 font-black text-2xl text-gray-900 group-hover:text-primary-500 transition duration-300`;
-const Description = tw.div``;
+const Description = tw.div`whitespace-pre-wrap`;
 
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
@@ -75,12 +86,13 @@ const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-4/6 min-h-144 
 const Content = tw.div`absolute left-0 bottom-0 px-4  flex-1 flex-col justify-start items-start`;
 // const Content = tw.div`px-4 float-bottom`;
 
-const Heading2 = styled.h1`
-  ${tw`p-5 text-3xl text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-snug -mt-24 sm:mt-0`}
+const Heading2 = styled.h2`
+  ${tw`p-5 text-5xl text-center text-gray-500 leading-snug mt-24 sm:mt-10`}
   span {
     ${tw`inline-block mt-2`}
   }
 `;
+
 
 
 
@@ -109,56 +121,47 @@ const Text = styled.div`
   }
 `;
 
-const PostTextContainer = tw.div``
+const PostContainer2 = tw.div`p-5`
+
+
+const YoutubeEmbed = ({ embedId }) => (
+    <div className="video-responsive">
+      <iframe
+        width="400"
+        height="300"
+        src={`https://www.youtube.com/embed/${embedId}`}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="Embedded youtube"
+      />
+    </div>
+  );
+  
+  YoutubeEmbed.propTypes = {
+    embedId: PropTypes.string.isRequired
+  };
+
 
 export default ({
     navLinks,
-    headingText = "One-day Trip To Discovery Village",
+    headingText = "Photo by TM Madhusudhan",
+    headingText2 = "Featured In The Honorable Section Of Toastmasters International May 2021 Newsletter",
     posts = [
       {
         imageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F1.jpg?alt=media&token=d9cee0a1-afd6-40a9-be25-95b7187d0753",
-        category: "Kanakpura Road, Bangalore",
-        date: "March 7, 2021",
-        title: "Ignite- The Outdoor Extravaganza",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F00.jpg?alt=media&token=3133b6bc-8d33-4d1d-a033-280f21bd2271",
+        category: "TM Madhusudhan",
+        date: "April 21, 2020",
+        title: "What Does Toastmasters Mean to You?",
         description:
-          "On this day, Daffodilians packed their bags and buckled up to take a break from the pandemic and go out in the sun and make new memories, following the COVID-19 guidelines. The fun and frolic excursion also included the most sensational Cricket Tournament - Daffodils Premier Championship.",
-        url: "https://timerse.com",
+          "Toastmasters means navigating through unchartered waters of public speaking and leadership. Causing ripple on the waters of time was possible when I started rowing toward the best version of myself. \n\n Click on the image to be redirected to Toastmasters International Website",
+        url: "https://www.toastmasters.org/magazine/magazine-issues/2021/may/photo-contest",
         featured: true
-      },
-      {
-        imageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F2.jpg?alt=media&token=e9003940-1276-45b6-9232-c71d206dbf1f",
-        
-      },
-      {
-        imageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F3.jpg?alt=media&token=3f810819-22b0-4c38-8147-f3a2d7b5e28c",
-      },
-      {
-        imageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F4.jpg?alt=media&token=c787ac72-f151-4627-9f82-b1d4d70c62dc",
-      },
-      {
-        imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F5.jpg?alt=media&token=d64fb6fb-06db-485a-8f51-93fe981f8448",
-      },
-      {
-        imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F6.jpg?alt=media&token=e1e4fcf0-8d1f-4c30-8166-2636c28de523",
-      },
-      {
-        imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F7.jpg?alt=media&token=d897bd16-adcc-48f8-ba16-bf8c0818af17",
-      },
-      {
-        imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F8.jpg?alt=media&token=004cc696-a1e8-4fd3-9bb9-ae1c8d7948c0",
-      },
-      {
-        imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F9.jpg?alt=media&token=461d7809-54b5-44a1-8c7d-31fdfc711517",
-      },
-      {
-        imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F10.jpg?alt=media&token=6f0cdb08-96f2-43e9-807f-f38c6d3a0180",
       }
     ]
   }) => {
+    const { isOpen } = false;
     const navLinks3 = [
         <NavLinks key={1}>
           {navLinks.map((navLink) => (
@@ -168,7 +171,7 @@ export default ({
           ))}
         </NavLinks>
       ];
-      const [visible, setVisible] = useState(4);
+      const [visible, setVisible] = useState(7);
   const onLoadMoreClick = () => {
     setVisible(v => v + 6);
   };
@@ -179,36 +182,66 @@ export default ({
         <Container2><StyledHeader links={navLinks3} /></Container2>
         <Container>
         <ContentWithPaddingXl>
-        <HeadingRow>
-            <Heading>{headingText}</Heading>
+            <HeadingRow>
+            <Heading>{headingText}</Heading> 
+          </HeadingRow>
+            <HeadingRow>
+            <Heading2>{headingText2}</Heading2> 
           </HeadingRow>
           <Posts>
             {posts.slice(0, visible).map((post, index) => (
               <PostContainer key={index} featured={post.featured}>
                 <Post className="group" as="a" href={post.url}>
-                  <Image imageSrc={post.imageSrc} />
-                  {post.featured && <Info>
-                  {post.featured && <Category>{post.category}</Category>}
-                    {post.featured && <CreationDate>{post.date}</CreationDate>}
+                  <Image imageSrc={post.imageSrc} onClick={console.log("Hello")}/>
+                  <Info>
+                    <Category>{post.category}</Category>
+                    {/* <CreationDate>{post.date}</CreationDate> */}
                     <Title>{post.title}</Title>
                     {post.featured && post.description && <Description>{post.description}</Description>}
-                  </Info>}
+                  </Info>
                 </Post>
               </PostContainer>
             ))}
           </Posts>
-          {visible < posts.length && (
+          {/* {visible < posts.length && (
             <ButtonContainer>
               <LoadMoreButton onClick={onLoadMoreClick}>Load More</LoadMoreButton>
             </ButtonContainer>
-          )}
+          )} */}
         </ContentWithPaddingXl>
-      </Container>
-
-        <Portfolio />
-        <Portfolio3 />
+        </Container>
+        <Container>
+            <Heading>Comic Strip by TM Dinesh</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F1.jpg?alt=media&token=5654f750-da7b-4417-82d5-d666c3a55fd5"}/>
+        </Container>
+        <Container>
+            <Heading>Comic Strip by TM Dinesh</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F4.jpg?alt=media&token=35159165-3881-41b3-91be-7f9f6fc38a10"}/>
+        </Container>
+        <Container>
+            <Heading>Digital Art by TM Suman</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F2.jpg?alt=media&token=406edda9-d23c-4227-936c-63590fae4f23"}/>
+        </Container>
+        <Container>
+            <Heading>Drawing by TM Ankita</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F3.jpg?alt=media&token=050ed55b-5de6-4390-9cec-4ec8720a5489"}/>
+        </Container>
+      <Heading>Dance by TM Ankita</Heading>
+      <PostContainer2><ResponsiveVideoEmbed url="https://youtube.com/embed/4ClEUNrG3Ww" /></PostContainer2>
+      <PostContainer2><ResponsiveVideoEmbed url="https://youtube.com/embed/IhpTIYfCOZU" /></PostContainer2>
+      <PostContainer2><ResponsiveVideoEmbed url="https://youtube.com/embed/4dnH-D0hP4s" /></PostContainer2>
         <Footer />
     </AnimationRevealPage>
   );
 };
 
+const getPlaceholderPost = () => ({
+    imageSrc:
+      "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+    category: "Travel Guide",
+    date: "April 19, 2020",
+    title: "Visit the beautiful Alps in Switzerland",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    url: "https://reddit.com"
+  });

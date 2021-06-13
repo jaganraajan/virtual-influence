@@ -12,9 +12,6 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
 
 import "slick-carousel/slick/slick.css";
-import Anup from "images/anup.jpg";
-import Harsha from "images/harsha.jpg";
-import Sagnik from "images/sagnik.jpg";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -79,22 +76,23 @@ export default () => {
    */
   const testimonials = [
     {
-      imageSrc: Harsha,
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fharsha.jpg?alt=media&token=cb8ad297-8b39-40d4-ba69-b567425b8ec8",
       quote: "Life is all about facing the bull by it's horns and with the confidence you gain at Daffodils Toastmasters Club, Bangalore you have won even before you have started..",
       customerName: "TM Harsha",
       customerTitle: "Member since 2016"
     },
     {
-      imageSrc: Anup,
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fanup2.jpg?alt=media&token=eeed7a2e-9e78-448d-b605-504fc570d1de",
       quote:"I would say with so much pride that I am part of such a reputed club with so much legacy behind and if I can do it anybody can do it.",
       customerName: "TM Anup",
       customerTitle: "Member since 2020"
-    },
+    }
+    ,
     {
-      imageSrc: Sagnik,
-      quote:"If you see what you wish to find in communication and leadership opportunities, this is the place.",
-      customerName: "Sagnik Biswas, DTM",
-      customerTitle: "Program Quality Director of District 92"
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fjeevan1.jfif?alt=media&token=60d0997c-a741-42dc-afbf-a5353761b199",
+      quote:"Daffodils Toastmasters Club is a place where more leaders are born in different sectors. It is the one place that allowed me to practice my public speaking skill at no Limits",
+      customerName: "TM Jeevan",
+      customerTitle: "Vice-President of Education"
     }
   ];
   return (

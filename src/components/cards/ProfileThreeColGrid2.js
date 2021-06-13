@@ -8,14 +8,6 @@ import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
-import Jagan from "images/jagan.jpg";
-import Aashish from "images/aashish.jpg";
-import Keshav from "images/keshav.jpg";
-import Sandhya from "images/sandhya.jpg";
-import Sanidhya from "images/sanidhya.jpg";
-import Jeevan from "images/jeevan.jpeg";
-import Surya from "images/surya.jpeg";
-import Umanath from "images/umanath.png";
 // import Surya from "images/surya.jpg";
 
 const HeadingContainer = tw.div``
@@ -50,14 +42,14 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "The 38th Committee of Daffodils Toastmasters Club",
+  heading = "Incoming Committee of Daffodils Toastmasters Club",
   subheading = "The new team",
   description = "New leaders who will uphold the legacy of our club for the term July to December 2021" ,
   cards = [
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/kishan.jpeg?alt=media&token=52d50a74-c8c4-4e1b-bc06-edd21a5bef61",
       position: "President",
-      name: "TM Kishan",
+      name: "TM Kishan Kumar",
       links: [
         {
           url: "https://twitter.com",
@@ -76,7 +68,7 @@ export default ({
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/manoj.jfif?alt=media&token=9377c8d9-4966-4bf3-acc1-d592bd7ffb6b",
       position: "Vice-president education",
-      name: "TM Manoj",
+      name: "TM Manoj Kumar",
       links: [
         {
           url: "https://twitter.com",
@@ -95,7 +87,7 @@ export default ({
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/ekta2.jpg?alt=media&token=e3df4a21-eb46-422f-9754-b7edc22408e4",
       position: "Vice-president membership",
-      name: "TM Ekta",
+      name: "TM Ekta Anand",
       links: [
         {
           url: "https://twitter.com",
@@ -114,7 +106,7 @@ export default ({
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/manu.jfif?alt=media&token=1c7e07b6-a64f-45d7-af27-4d327ba57c97",
       position: "Vice-president Public Relations",
-      name: "TM Manu",
+      name: "TM Manu Abhuday",
       links: [
         {
           url: "https://twitter.com",
@@ -133,7 +125,7 @@ export default ({
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/harini2.jpg?alt=media&token=043194c0-5a44-4087-b07a-77a4405f65d2",
       position: "Secretary",
-      name: "TM Harini",
+      name: "TM Harini N",
       links: [
         {
           url: "https://twitter.com",
@@ -152,7 +144,7 @@ export default ({
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sona2.jpg?alt=media&token=937e1e1c-846f-4a8a-abf9-18e6ac3d5836",
       position: "Treasurer",
-      name: "TM Sona",
+      name: "TM Sona Hemat Bilakhiya",
       links: [
         {
           url: "https://twitter.com",
@@ -170,8 +162,8 @@ export default ({
     },
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/anup2.jpg?alt=media&token=df6abfd5-eb9e-43a1-b634-8bd45c4d6070",
-      position: "Sargeant-At-Arms",
-      name: "TM Anup",
+      position: "Sergeant-At-Arms",
+      name: "TM Anup Basavaraj ",
       links: [
         {
           url: "https://twitter.com",
@@ -190,7 +182,7 @@ export default ({
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/aashish.jpg?alt=media&token=d9f0ae1c-aaea-4e02-a8c2-bd9c637cedd6",
       position: "Immediate Past President",
-      name: "TM Aashish",
+      name: "TM Aashish Mukund",
       links: [
         {
           url: "https://twitter.com",

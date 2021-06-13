@@ -47,9 +47,9 @@ export default ({
   description = "A bunch of excited and energetic souls took charge of Daffodils Toastmasters Club on 2nd January 2021. The Installation Officer was our club member, Kumaran M. Pethi, DTM. For the first time ever, the Chief Guest for our Installation Ceremony was the International President of Toastmasters, Richard E. Peck, DTM. The ceremony was also attended by dignitaries from the District, guests and fellow Daffodilians." ,
   cards = [
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/aashish.jpg?alt=media&token=d9f0ae1c-aaea-4e02-a8c2-bd9c637cedd6",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/new%2Fvinodh.jfif?alt=media&token=e37860c8-e8d0-45d3-91e0-0deb0bd44123",
       position: "President",
-      name: "TM Aashish Mukund",
+      name: "TM Vinodh",
       links: [
         {
           url: "https://twitter.com",
@@ -66,66 +66,9 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fjeevan2.jpg?alt=media&token=51157985-b689-460c-aa80-2dce180802fc",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/manu.jfif?alt=media&token=1c7e07b6-a64f-45d7-af27-4d327ba57c97",
       position: "Vice-president education",
-      name: "TM Jeevan RK",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fkeshav.jpg?alt=media&token=44028467-a94b-416c-b8d6-5b66c18e2c33",
-      position: "Vice-president membership",
-      name: "TM Keshav Naganathan",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fjagan.jpg?alt=media&token=4ed05b4d-16ef-403b-a072-1c4da6f85bf1",
-      position: "Vice-president Public Relations",
-      name: "TM Jagan R",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fsanidhya.jpg?alt=media&token=00b8b9b3-f070-401a-ba8a-4c9a4648520e",
-      position: "Secretary",
-      name: "TM Sanidhya",
+      name: "TM Manu",
       links: [
         {
           url: "https://twitter.com",
@@ -143,7 +86,7 @@ export default ({
     },
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fsandhya.jpg?alt=media&token=ffd5db8b-8573-4842-b2f7-79414913b74f",
-      position: "Treasurer",
+      position: "Vice-president membership",
       name: "TM Sandhya",
       links: [
         {
@@ -159,61 +102,22 @@ export default ({
           icon: GithubIcon,
         },
       ],
-    },
-    {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fsurya.jpeg?alt=media&token=42be8626-4813-4149-a846-10a275d8436c",
-      position: "Sergeant-At-Arms",
-      name: "TM Suryakant Sharma",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fumanath.png?alt=media&token=aaa407d6-8a42-47a2-9f35-a8334fdd66ef",
-      position: "Immediate Past President",
-      name: "TM Umanath",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
+    }
   ]
 }) => {
   return (
     <Container>
-      <ContentWithPaddingXl>
-        <HeadingContainer>
+        {/* <HeadingContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
           {heading && <Heading>{heading}</Heading> }
           {description && <Description>{description}</Description> }
-        </HeadingContainer>
+        </HeadingContainer> */}
         <Cards>
           {cards.map((card, index) => (
             <Card key={index}>
               <CardImage imageSrc={card.imageSrc} />
               <CardContent>
-                <span className="position">{card.position}</span>
+                {/* <span className="position">{card.position}</span> */}
                 <span className="name">{card.name}</span>
                 {/* <CardLinks>
                   {card.links.map((link, linkIndex) => (
@@ -226,7 +130,6 @@ export default ({
             </Card>
           ))}
         </Cards>
-      </ContentWithPaddingXl>
     </Container>
   );
 };

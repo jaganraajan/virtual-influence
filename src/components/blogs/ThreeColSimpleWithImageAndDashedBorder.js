@@ -47,8 +47,8 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "Blog",
-  heading1 = <>Leadership <span tw="text-primary-500">Articles</span></>,
-  heading2 = <>Member <span tw="text-primary-500">Articles</span></>,
+  heading1 = <>From our Leaders</>,
+  heading2 = <><span tw="text-primary-500">Articles</span> from our Members</>,
   heading3 = <>Poem <span tw="text-primary-500">Segment</span></>,
   description = <>on the theme <span tw="text-primary-500">Virtual Influence - Building Relationships through Tech</span></>,
 
@@ -98,7 +98,7 @@ export default ({
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/shreenidhi21.jpg?alt=media&token=0b23a1e9-0527-4a8d-a79e-9d5a3e0f2b81",
       author: "TM Shree Nidhi",
       category: "Advertising",
-      title: "Connect beyond Disconnections",
+      title: "Connect Beyond Disconnections",
       description: "Well, for how many of us was this zoom zone a hate zone?\n\n Count me in, if you mentally said a yes! And a yes! And a Yes!\n\n....",
       url: "/articles/member/2"
     },
@@ -107,7 +107,7 @@ export default ({
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/Manoj.jpg?alt=media&token=baf686d5-524a-4833-8f29-f16a17a7f71c",
       author: "TM Manoj",
       category: "Social Media",
-      title: "Improve your Writing Style with evocativeness",
+      title: "Improve Your Writing Style With Evocativeness",
       description: "Writing with evocativeness stokes emotion and triggers imagery, making the writing more stimulating; below are...",
       url: "/articles/member/3"
     },
@@ -125,7 +125,7 @@ export default ({
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/amrutha.jpg?alt=media&token=ec23d455-1722-4da1-b0d7-a281db558b8a",
       author: "TM Amrutha",
       category: "Advertising",
-      title: "Some other day",
+      title: "Some Other Day",
       description: "A lazy person gets a task done in the shortest amount of time. If you want to find the easiest way to get something done, ask...",
       url: "/articles/member/5"
     },
@@ -143,7 +143,7 @@ export default ({
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/Anushree2.jpg?alt=media&token=58b07057-f747-4710-8418-055cc2d842d0",
       author: "TM Anushree",
       category: "Social Media",
-      title: "Where there is a will...",
+      title: "Where There Is A Will...",
       description: "Despite the difficulty of the past year, I have a lot of good memories to cherish, one of which was having the Toastmasters family...",
       url: "/articles/member/7"
     },
@@ -152,7 +152,7 @@ export default ({
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/vaibhav2.png?alt=media&token=5aa68fe4-be50-4199-a62d-9d92a69d7f91",
       author: "TM Vaibhav",
       category: "Social Media",
-      title: "When life goes back to normal",
+      title: "When Life Goes Back To Normal",
       description: "The pandemic has accelerated technological advances and enabled us to attend meetings, learn from International speakers...",
       url: "/articles/member/8"
     }

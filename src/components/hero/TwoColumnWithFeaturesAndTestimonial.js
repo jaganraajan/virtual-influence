@@ -10,7 +10,6 @@ import { Container, ContentWithVerticalPadding } from "components/misc/Layouts.j
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg"
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg"
-import Linda from "images/linda1.png"
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 const Header = tw(HeaderBase)`min-w-0 bg-gradient-to-r from-blue-400 via-purple-500 to-purple-600 p-4`;
@@ -33,15 +32,15 @@ const ImageDecoratorBlob = styled(SvgDecoratorBlob1)`
 `;
 const Testimonial = tw.div`max-w-sm rounded-b md:rounded-none relative sm:absolute bottom-0 inset-x-0 z-20 px-8 py-6 sm:px-10 sm:py-8 bg-primary-900 text-gray-400 font-medium transform md:-translate-x-32 text-sm leading-relaxed md:-mr-16 xl:mr-0`
 const QuotesLeftIcon = tw(QuotesLeftIconBase)`w-16 h-16 md:w-12 md:h-12 absolute top-0 left-0 text-gray-100 md:text-red-500 transform translate-x-1 md:-translate-x-1/2 md:-translate-y-5 opacity-10 md:opacity-100`
-const Quote = tw.blockquote``
-const CustomerName = tw.p`mt-4 font-bold`
-const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
+const Quote = tw.blockquote`text-gray-100`
+const CustomerName = tw.p`mt-4 text-yellow-400 font-bold`
+const CustomerCompany = tw.p`mt-1 text-sm text-gray-100`
 
 
 export default ({
   heading = "Exclusive interview with TM Linda-Marie Miller",
   description = "Thousands of Toastmasters, representing over 100 countries, battled for the title of World Champion of Public Speaking in the 2020 Virtual Convention. Competing among the elites in her first ever International Speech Contest, Linda-Marie Miller emerged as the First Runner-Up in the 2020 World Championship of Public Speaking.",
-  imageSrc = "images/linda1.jpg",
+  imageSrc = "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Flinda1.jpg?alt=media&token=d3678af4-d64a-46ea-a3f9-33ffa74eee0f",
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
@@ -74,7 +73,7 @@ export default ({
           </TextColumn>
           <ImageColumn>
             <ImageContainer>
-              <Image src={Linda} />
+              <Image src="https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Flinda1.jpg?alt=media&token=d3678af4-d64a-46ea-a3f9-33ffa74eee0f" />
               {imageDecoratorBlob && <ImageDecoratorBlob />}
               <Testimonial>
                 <QuotesLeftIcon/>

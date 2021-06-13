@@ -40,7 +40,7 @@ const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-rel
 export default ({
   subheading = "",
   heading = "Questions",
-  description = "Here are some frequently asked questions about our club and toastmasters in general. Should you have any other questions, feel free to reach out via the contact form below.",
+  description = "Here are some frequently asked questions about our club and toastmasters in general.",
   imageSrc = "https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
   imageContain = false,
   imageShadow = true,
@@ -54,17 +54,17 @@ export default ({
     {
       question: "When are our meetings conducted?",
       answer:
-        "We are currently conducting our regular meetings online via Zoom on Saturdays 6-8 pm IST."
+        "We are currently conducting our regular meetings online via Zoom weekly on Saturdays 6-8 PM IST."
     },
     {
       question: "Can I attend our club meeting ?",
       answer:
-        "You can contact Vice President Membership TM Keshav Naganathan – +91 91106 93212 to get the link to the meeting."
+        "Yes. You can contact our Vice President Membership TM Keshav Naganathan – +91 91106 93212 to get more details."
     },
     {
-      question: "What are the benefits of joining toastmastesrs?",
+      question: "What are the benefits of joining toastmasters?",
       answer:
-        "Toastmasters can help you lose the fear of public speaking and learn skills that will help you be more successful in your chosen endeavor. You’ll listen better. You’ll more easily lead teams and conduct meetings. You’ll comfortably give and receive constructive evaluations. You already have some or all of these skills. In Toastmasters, you will enhance them."
+        "Toastmasters can help you lose the fear of public speaking and learn skills that will help you be more successful in your chosen endeavor. You’ll listen better. You’ll more easily lead teams and conduct meetings. You’ll comfortably give and receive constructive evaluations. Even if you already have some or all of these skills, you will enhance them in Toastmasters."
     }
   ];
 

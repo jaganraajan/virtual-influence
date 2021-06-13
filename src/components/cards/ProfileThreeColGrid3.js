@@ -42,161 +42,77 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "The 38th Committee of Daffodils Toastmasters Club",
+  heading = "New members in our family",
   subheading = "The new team",
   description = "New leaders who will uphold the legacy of our club for the term July to December 2021" ,
   cards = [
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/kishan.jpeg?alt=media&token=52d50a74-c8c4-4e1b-bc06-edd21a5bef61",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fameet.jpeg?alt=media&token=80fe2e0b-1441-42c7-93e1-2ee4820b21c4",
       position: "President",
-      name: "TM Kishan",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Ameet",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/manoj.jfif?alt=media&token=9377c8d9-4966-4bf3-acc1-d592bd7ffb6b",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fanandi.jpeg?alt=media&token=c64a5642-1a50-4b8e-b001-b8b0d17fc193",
       position: "Vice-president education",
-      name: "TM Manoj",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Anandi",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/ekta2.jpg?alt=media&token=e3df4a21-eb46-422f-9754-b7edc22408e4",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fchetana.jpeg?alt=media&token=d9bc1145-68c0-4e2d-98e3-affa0b1695a0",
       position: "Vice-president membership",
-      name: "TM Ekta",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Chetana",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/manu.jfif?alt=media&token=1c7e07b6-a64f-45d7-af27-4d327ba57c97",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fdinesh.jpeg?alt=media&token=d42207cc-2848-4091-9902-e4f7e636ff7b",
       position: "Vice-president Public Relations",
-      name: "TM Manu",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Dinesh",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/harini2.jpg?alt=media&token=043194c0-5a44-4087-b07a-77a4405f65d2",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fgeetha.jpeg?alt=media&token=fb85e9b3-a77a-4418-9266-691577ef1935",
       position: "Secretary",
-      name: "TM Harini",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Geetha",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sona2.jpg?alt=media&token=937e1e1c-846f-4a8a-abf9-18e6ac3d5836",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Flakshmi.jpeg?alt=media&token=daf19b4e-416f-4fbe-a6d1-45868f1b8e98",
       position: "Treasurer",
-      name: "TM Sona",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Lakshmi",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/anup2.jpg?alt=media&token=df6abfd5-eb9e-43a1-b634-8bd45c4d6070",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fpranav.jpeg?alt=media&token=c767b272-7f02-4669-836c-cf35d0e57679",
       position: "Sargeant-At-Arms",
-      name: "TM Anup",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Pranav",
     },
     {
-      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/aashish.jpg?alt=media&token=d9f0ae1c-aaea-4e02-a8c2-bd9c637cedd6",
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2FAnkita.jpeg?alt=media&token=22ffc0b7-cd91-4127-86c5-8c3163de6681",
       position: "Immediate Past President",
-      name: "TM Aashish",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
+      name: "TM Ankita",
+    },
+    {
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fapoorva2.jpg?alt=media&token=00934691-ea56-4bed-ba0c-b7afe4bdb9e2",
+      position: "Immediate Past President",
+      name: "TM Apoorva",
+    },
+    {
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fharini.jpeg?alt=media&token=194198dc-c5b9-4a85-a2f8-e6e519903cb2",
+      position: "Immediate Past President",
+      name: "TM Harini",
+    },
+    {
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fanirudh.jfif?alt=media&token=898f3b7b-da92-453e-8675-719ea1e20287",
+      position: "Immediate Past President",
+      name: "TM Anirudh",
+    },
+    {
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fjazeena.png?alt=media&token=6ecb098a-4fb9-404f-95f5-69729e33f220",
+      position: "Immediate Past President",
+      name: "TM Jazeena",
+    },{
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2Fmanasa.jpeg?alt=media&token=634ac712-abdb-4afa-8f68-072f350ffaa3",
+      position: "Immediate Past President",
+      name: "TM Manasa",
+    },{
+      imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/newmembers%2FAnushree2.jpg?alt=media&token=978a4d6a-5a64-4bad-9d67-0014926c3b5b",
+      position: "Immediate Past President",
+      name: "TM Anushree",
     },
   ]
 }) => {
@@ -204,16 +120,16 @@ export default ({
     <Container>
       <ContentWithPaddingXl>
         <HeadingContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
+          {/* {subheading && <Subheading>{subheading}</Subheading>} */}
           {heading && <Heading>{heading}</Heading> }
-          {description && <Description>{description}</Description> }
+          {/* {description && <Description>{description}</Description> } */}
         </HeadingContainer>
         <Cards>
           {cards.map((card, index) => (
             <Card key={index}>
               <CardImage imageSrc={card.imageSrc} />
               <CardContent>
-                <span className="position">{card.position}</span>
+                {/* <span className="position">{card.position}</span> */}
                 <span className="name">{card.name}</span>
                 {/* <CardLinks>
                   {card.links.map((link, linkIndex) => (

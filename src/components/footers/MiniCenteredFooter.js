@@ -6,6 +6,7 @@ import logo from "../../images/logo_new.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as LinkedinIcon } from "../../images/linkedin-icon.svg";
 
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
@@ -43,6 +44,8 @@ export default (navLinks) => {
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
               <Link href="/articles">Articles</Link>
+              <Link href="/artwork">Artwork</Link>
+              <Link href="/milestones">Milestones</Link>
               <Link href="/interview">Interview</Link>
               <Link href="/gallery">Gallery</Link>
           </LinksContainer>
@@ -52,6 +55,9 @@ export default (navLinks) => {
             </SocialLink>
             <SocialLink href="https://www.instagram.com/daffodilstmc/">
               <InstagramIcon />
+            </SocialLink>
+            <SocialLink href="https://www.linkedin.com/company/daffodils-toastmaster-club">
+              <LinkedinIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>

@@ -125,6 +125,8 @@ import MemberPoems from "components/articles/MemberPoems.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Gallery from "pages/Gallery";
 import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";
+import Artwork from "pages/Artwork.js";
+import Milestones from "pages/Milestones.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -141,6 +143,14 @@ export default function App() {
     {
       url: "/articles",
       title: "Articles"
+    },
+    {
+      url: "/artwork",
+      title: "Artwork"
+    },
+    {
+      url: "/milestones",
+      title: "Milestones"
     },
     {
       url: "/interview",
@@ -185,6 +195,12 @@ export default function App() {
         </Route>
         <Route path="/articles">
           <Articles navLinks={navLinks}/>
+        </Route>
+        <Route path="/artwork">
+          <Artwork navLinks={navLinks}/>
+        </Route>
+        <Route path="/milestones">
+          <Milestones navLinks={navLinks}/>
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
