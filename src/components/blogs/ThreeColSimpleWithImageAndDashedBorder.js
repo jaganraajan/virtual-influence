@@ -56,12 +56,21 @@ export default ({
   const leadershipPosts = [
     {
       imageSrc:
+        "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
+      author: "Boopathy Sankar, DTM - District 92 Director",
+      category: "SEO",
+      title: "Boopathy Sankar, DTM - District 92 Director",
+      description: "I would have laughed at you, if you have asked me in beginning of year 2020 that we need to conduct online meetings for...",
+      url: "/articles/leadership/1"
+    },
+    {
+      imageSrc:
         "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
       author: "Sagnik Biswas, DTM - District 92 Program Quality Director",
       category: "SEO",
       title: "Sagnik Biswas, DTM- District 92 Program Quality Director",
       description: "In this year, we have seen and heard a hundred different ways to connect with one another, and we...",
-      url: "/articles/leadership/1"
+      url: "/articles/leadership/2"
     },
     {
       imageSrc:
@@ -70,7 +79,7 @@ export default ({
       category: "SEO",
       title: "Prakash Tamhankar, DTM - District 92 Public Relations Manager",
       description: "If someone would have asked me in Feb 2020 to do all my office work remotely from home, especially with my role as a manager...",
-      url: "/articles/leadership/2"
+      url: "/articles/leadership/3"
     },
     {
       imageSrc:
@@ -79,7 +88,7 @@ export default ({
       category: "Advertising",
       title: "Divya Rajvanshy, DTM - Division C Director",
       description: "“You cannot go out or meet anyone” – these are the words that pretty much defined life in the last few months. Home isolation...",
-      url: "/articles/leadership/3"
+      url: "/articles/leadership/4"
     }
   ];
 

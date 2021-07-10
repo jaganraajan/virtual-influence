@@ -16,10 +16,10 @@ const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w
 const Card = tw.div`lg:mx-4 xl:mx-8 max-w-sm lg:max-w-xs`;
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`bg-cover bg-center h-80 lg:h-64 rounded`
+  tw`bg-contain bg-no-repeat bg-center h-80 lg:h-64 rounded`
 ]);
 const Category = tw.div`mt-4 text-secondary-100 font-bold text-sm`;
-const Title = tw.h4`mt-2 leading-relaxed font-bold text-lg`;
+const Title = tw.h4`mt-2 leading-relaxed font-bold text-lg text-center`;
 const Link = tw.a`inline-block mt-2 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
 const DecoratorBlob1 = tw(
@@ -33,41 +33,35 @@ export default () => {
   const blogPosts = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Ftm.jpeg?alt=media&token=348481af-d3c8-4721-8cdf-592627601302",
       category: "Event Tips",
-      title: "Finding Amazing Events Near You - Fast, Cheap & Free",
+      title: "TM Fursey Gotuaco using props to demonstrate his point in the educational session",
       url: "https://timerse.com"
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1543365067-fa127bcb2303?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fgrp.png?alt=media&token=9b121a29-07ed-4e8a-a65b-cd82a76fb117",
       category: "Reviews",
-      title: "The Top Rated Musical Concerts Worldwide in 2019",
+      title: "Graduation Ceremony of the Speechcrafters at Unleash on 13th June 2021!",
       url: "https://reddit.com"
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1499364615650-ec38552f4f34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fgrp2.png?alt=media&token=c3c1bc93-41a9-4937-9219-afd2cec3eb9a",
       category: "Discover",
-      title: "This female band is making buzz all over the world",
+      title: "...and as per tradition there goes all the hats ",
       url: "https://timerse.com"
     }
   ];
   return (
     <Container>
       <Content>
-        <HeadingInfoContainer>
-          <HeadingTitle>Leadership </HeadingTitle>
-          <HeadingDescription>Some amazing blog posts that are written by even more amazing people.</HeadingDescription>
-        </HeadingInfoContainer>
         <ThreeColumn>
           {blogPosts.map((post, index) => (
             <Column key={index}>
               <Card>
                 <Image imageSrc={post.imageSrc} />
-                <Category>{post.category}</Category>
                 <Title>{post.title}</Title>
-                <Link href={post.url}>Read Post</Link>
               </Card>
             </Column>
           ))}

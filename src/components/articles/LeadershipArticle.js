@@ -126,6 +126,38 @@ export default (navLinks) => {
   ]
   const leader = [
   {
+    title: "Boopathy Sankar, DTM",
+    article: "I would have laughed at you, if you have asked me in beginning of year 2020 that we need to conduct online meetings for Toastmasters.  Today that is the reality.  Covid -19 tossed the entire world upside down and brought the world to grinding halt, except for technological innovations and creativity.  \n\nAs a District, District 92 embarked on the journey of online meetings starting from the end of March 2020.  As a Program Quality Director of District 92 B, it was my responsibility along with my fellow director in District 92 A, to conduct the Contests through online as recommended by District Executive Committee meeting. By the time, Covid-19 entered India, we had several Areas / Divisions that could not conduct their contests in the Toastmasters term 2019-20. \n\nTo support the organizing teams and members to have a seamless experience, PQD office conducted several dry runs and demos to perfect the art of this technology.  Yes, for the first time, it sounded like an art, one option or other was not working.  With great amount of efforts and excellent support from members, we could successfully conduct the semi-final, Finals and in fact a Mini-Coronation our annual conference.  \n\nWith nearly 1000 members participating in virtual mode for two days, we could really turn the world and provide them the experience of learning and contesting. We brought one eminent speaker from Australia to deliver the first Virtual education session in District 92 Annual conference.  As a team, we believe we could influence the members with technology and provided the greatest engagement at the time when Covid-19 was getting into peak.  \n\nVirtual Conferences have become the order of the day for many professional organizations and Toastmasters are no different. The reach of technology is unlimited and today many clubs invite great speakers and leaders to their clubs just by means of technology.  Sky is the limit, Virtually it is possible to reach those limits.  Have a great learning! Cheers!!",
+    imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
+    authorPic: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
+    popularPosts : [
+      {
+        postImageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
+        authorImageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
+        title: "The Invisible Rope",
+        description:
+          "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
+        authorName: "Sagnik Biswas, DTM",
+        authorProfile: "District 92 Program Quality Director",
+        url: "/articles/leadership/2"
+      },
+      {
+        postImageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
+        authorImageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
+        title: "Virtual Influence",
+        description:
+          "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
+        authorName: "Prakash Tamhankar, DTM",
+        authorProfile: "District 92 Public Relations Manager",
+        url: "/articles/leadership/3"
+      }
+    ]
+  }, 
+  {
     title: "Sagnik Biswas, DTM",
     article: "In this year, we have seen and heard a hundred different ways to connect with one another, and we have touched each other's lives through the virtual medium, and we have found new ways to collaborate, connect and influence others. But the basis of it all is in showing up, with the best of our capabilities. I believe that is the root of any form of influence, that you show up consistently and make a difference in the lives of others. Whichever medium it may be, as long as we choose to work together to make life easier for someone in any way, we made a change happen. \n\nI wish the members of Daffodils Toastmasters Club all the very best and I hope that you and your families are doing well and keeping safe.",
     imgSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
@@ -141,7 +173,7 @@ export default (navLinks) => {
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "Prakash Tamhankar, DTM",
         authorProfile: "District 92 Public Relations Manager",
-        url: "/articles/leadership/2"
+        url: "/articles/leadership/3"
       },
       {
         postImageSrc:
@@ -153,7 +185,7 @@ export default (navLinks) => {
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "Divya Rajvanshy, DTM",
         authorProfile: "Division C Director",
-        url: "/articles/leadership/3"
+        url: "/articles/leadership/4"
       }
     ]
   }, 
@@ -173,17 +205,17 @@ export default (navLinks) => {
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "Divya Rajvanshy, DTM",
         authorProfile: "Division C Director",
-        url: "/articles/leadership/3"
+        url: "/articles/leadership/4"
       }, {
         postImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
         authorImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/sagnik.jpg?alt=media&token=7c0165d0-9e59-4fc9-9ff0-2fc64f2a918e",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
         title: "The Invisible Rope",
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-        authorName: "Sagnik Biswas, DTM",
-        authorProfile: "District 92 Program Quality Director",
+        authorName: "Boopathy Sankar, DTM",
+        authorProfile: "District 92 Director",
         url: "/articles/leadership/1"
       }
     ]
@@ -196,15 +228,15 @@ export default (navLinks) => {
     popularPosts : [
       {
         postImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
         authorImageSrc:
-          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/prakash.png?alt=media&token=37e5a77e-a6b7-4879-b638-2ac7fcf412f3",
-        title: "Virtual Influence",
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/gallery%2Fboopathy-sanka1r.jpg?alt=media&token=e6b85544-f54e-4956-b3bf-343f36ae220f",
+        title: "The Invisible Rope",
         description:
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
-        authorName: "Prakash Tamhankar, DTM",
-        authorProfile: "District 92 Public Relations Manager",
-        url: "/articles/leadership/2"
+        authorName: "Boopathy Sankar, DTM",
+        authorProfile: "District 92 Director",
+        url: "/articles/leadership/1"
       },
       {
         postImageSrc:
@@ -216,7 +248,7 @@ export default (navLinks) => {
           "Lorem ipsum dolor sit amet, consecteturious adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua now ele.",
         authorName: "Sagnik Biswas, DTM",
         authorProfile: "District 92 Program Quality Director",
-        url: "/articles/leadership/1"
+        url: "/articles/leadership/2"
       }
     ]
   },

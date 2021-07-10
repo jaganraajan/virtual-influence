@@ -11,6 +11,7 @@ import Portfolio from "components/cards/ProfileThreeColGrid2.js";
 import Portfolio3 from "components/cards/ProfileThreeColGrid3.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import { PrimaryButton } from "components/misc/Buttons";
+import Blog from "components/blogs/ThreeColSimpleWithImage.js"
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -114,6 +115,7 @@ const PostTextContainer = tw.div``
 export default ({
     navLinks,
     headingText = "One-day Trip To Discovery Village",
+    headingText2 = "Unleash Speechcraft Program",
     posts = [
       {
         imageSrc:
@@ -157,7 +159,33 @@ export default ({
       {
         imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F10.jpg?alt=media&token=6f0cdb08-96f2-43e9-807f-f38c6d3a0180",
       }
-    ]
+    ],
+    posts2 = [
+      {
+        imageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F1.jpg?alt=media&token=d9cee0a1-afd6-40a9-be25-95b7187d0753",
+        category: "Kanakpura Road, Bangalore",
+        date: "March 7, 2021",
+        title: "Ignite- The Outdoor Extravaganza",
+        description:
+          "On this day, Daffodilians packed their bags and buckled up to take a break from the pandemic and go out in the sun and make new memories, following the COVID-19 guidelines. The fun and frolic excursion also included the most sensational Cricket Tournament - Daffodils Premier Championship.",
+        url: "https://timerse.com",
+        featured: false,
+      },
+      {
+        imageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F2.jpg?alt=media&token=e9003940-1276-45b6-9232-c71d206dbf1f",
+        
+      },
+      {
+        imageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F3.jpg?alt=media&token=3f810819-22b0-4c38-8147-f3a2d7b5e28c",
+      },
+      {
+        imageSrc:
+          "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/discovery%2F4.jpg?alt=media&token=c787ac72-f151-4627-9f82-b1d4d70c62dc",
+      },
+    ],
   }) => {
     const navLinks3 = [
         <NavLinks key={1}>
@@ -173,6 +201,7 @@ export default ({
     setVisible(v => v + 6);
   };
   // This setting is for animating the post background image on hover
+
 
   return (
     <AnimationRevealPage>
@@ -202,6 +231,12 @@ export default ({
               <LoadMoreButton onClick={onLoadMoreClick}>Load More</LoadMoreButton>
             </ButtonContainer>
           )}
+        </ContentWithPaddingXl>
+        <ContentWithPaddingXl>
+        <HeadingRow>
+            <Heading>{headingText2}</Heading>
+          </HeadingRow>
+          <Blog />
         </ContentWithPaddingXl>
       </Container>
 

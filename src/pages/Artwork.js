@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
 import ResponsiveVideoEmbed from "helpers/ResponsiveVideoEmbed";
 
 const HeadingRow = tw.div`flex`;
-const Heading = tw(SectionHeading)`text-gray-900 text-center w-screen my-5`;
+const Heading = tw(SectionHeading)`text-gray-900 text-center my-5 mx-auto`;
 // const Heading2 = tw(SectionHeading)`text-right text-gray-500`;
 const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
@@ -211,6 +211,18 @@ export default ({
         </ContentWithPaddingXl>
         </Container>
         <Container>
+            <Heading>Drawing by TM Jagan</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2Fdrawing_sai_baba.jpeg?alt=media&token=46123859-3a7a-4c48-8fe8-1d7b7a04f62f"}/>
+        </Container>
+        <Container>
+            <Heading>Drawing by TM Ankita</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F3.jpg?alt=media&token=050ed55b-5de6-4390-9cec-4ec8720a5489"}/>
+        </Container>
+        <Container>
+            <Heading>Digital Art by TM Suman</Heading>
+            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F2.jpg?alt=media&token=406edda9-d23c-4227-936c-63590fae4f23"}/>
+        </Container>
+        <Container>
             <Heading>Comic Strip by TM Dinesh</Heading>
             <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F1.jpg?alt=media&token=5654f750-da7b-4417-82d5-d666c3a55fd5"}/>
         </Container>
@@ -218,14 +230,7 @@ export default ({
             <Heading>Comic Strip by TM Dinesh</Heading>
             <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F4.jpg?alt=media&token=35159165-3881-41b3-91be-7f9f6fc38a10"}/>
         </Container>
-        <Container>
-            <Heading>Digital Art by TM Suman</Heading>
-            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F2.jpg?alt=media&token=406edda9-d23c-4227-936c-63590fae4f23"}/>
-        </Container>
-        <Container>
-            <Heading>Drawing by TM Ankita</Heading>
-            <Image2 imageSrc={"https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/art%2F3.jpg?alt=media&token=050ed55b-5de6-4390-9cec-4ec8720a5489"}/>
-        </Container>
+        
       <Heading>Dance by TM Ankita</Heading>
       <PostContainer2><ResponsiveVideoEmbed url="https://youtube.com/embed/4ClEUNrG3Ww" /></PostContainer2>
       <PostContainer2><ResponsiveVideoEmbed url="https://youtube.com/embed/IhpTIYfCOZU" /></PostContainer2>

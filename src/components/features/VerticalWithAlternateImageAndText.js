@@ -48,7 +48,7 @@ export default () => {
   const cards = [
     {
       imageSrc: "https://firebasestorage.googleapis.com/v0/b/virtual-influence.appspot.com/o/old%2Fjagan.jpg?alt=media&token=4ed05b4d-16ef-403b-a072-1c4da6f85bf1",
-      subtitle: "TM Jagadeesh R",
+      subtitle: "TM Jagan R",
       title: "Editor's Desk",
       role: "Vice President of Public Relations",
       description:
