@@ -29,15 +29,12 @@ const Card = styled.a`
       ${tw`w-8 h-8`}
     }
   }
-
   .title {
     ${tw`mt-4 font-bold text-xl leading-none`}
   }
-
   .description {
     ${tw`mt-4 text-sm font-medium text-secondary-300`}
   }
-
   .link {
     ${tw`mt-auto inline-flex items-center pt-5 text-sm font-bold text-primary-300 leading-none hocus:text-primary-900 transition duration-300`}
     .icon {
@@ -114,4 +111,8 @@ export default ({
       <DecoratorBlob />
     </Container>
   );
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> viv4

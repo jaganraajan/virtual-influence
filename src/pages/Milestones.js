@@ -9,26 +9,8 @@ import MainFeature1 from "components/features/VerticalWithAlternateImageAndText2
 import MainFeature2 from "components/features/VerticalWithAlternateImageAndText3.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
 import MainFeature3 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-// import Features from "components/features/ThreeColSimple.js";
-// import Features from "components/features/ThreeColWithSideImage.js";
-import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
-import FAQ from "components/faqs/SimpleWithSideImage.js";
-// import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import Hero from "components/hero/BackgroundAsImage.js";
-import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview";
 
-
-
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import SimpleIconImage from "images/simple-icon.svg";
-import CustomerLoveIconImage from "images/simple-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-
-import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";
 
 

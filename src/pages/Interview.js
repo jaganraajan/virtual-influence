@@ -10,7 +10,6 @@ import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial";
-import Footer from "components/footers/FiveColumnDark.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Footer2 from "components/footers/MiniCenteredFooter.js";
 import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "components/headers/light.js";

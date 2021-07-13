@@ -59,7 +59,7 @@ export default ({
     {
       question: "Can I attend our club meeting ?",
       answer:
-        "Yes. You can contact our Vice President Membership TM Keshav Naganathan – +91 91106 93212 to get more details."
+        "Yes. You can contact our chatbot Daffy on Facebook to get more details."
     },
     {
       question: "What are the benefits of joining toastmasters?",
